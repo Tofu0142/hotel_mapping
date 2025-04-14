@@ -23,9 +23,16 @@ mock_model.predict_similarity.return_value = [0.9]
 mock_model_class.return_value = mock_model
 sys.modules['hotel_mapping.models.bert_xgb'].BertXGBoostRoomMatcher = mock_model_class
 
+# Create a proper mock for preprocess_room_names
+mock_preprocess = MagicMock()
+mock_preprocess.return_value = (
+    ["superior mountain view"], 
+    {"room_type": ["superior"], "has_view": [True]}
+)
+
 # Mock hotel_mapping.data_processing.data_processing
 sys.modules['hotel_mapping.data_processing.data_processing'] = MagicMock()
-sys.modules['hotel_mapping.data_processing.data_processing'].preprocess_room_names = MagicMock()
+sys.modules['hotel_mapping.data_processing.data_processing'].preprocess_room_names = mock_preprocess
 sys.modules['hotel_mapping.data_processing.data_processing'].enhanced_room_matching = MagicMock()
 
 # Now import app
@@ -101,7 +108,23 @@ def test_read_main():
     response = client.get("/")
     assert response.status_code == 200
 
-def test_match_rooms():
+@patch('hotel_mapping.app.preprocess_room_names')
+@patch('hotel_mapping.app.enhanced_room_matching')
+def test_match_rooms(mock_match, mock_preprocess):
+    # Set up mocks
+    mock_preprocess.side_effect = [
+        (["superior mountain view"], {"room_type": ["superior"], "has_view": [True]}),
+        (["king deluxe balcony"], {"room_type": ["deluxe"], "has_balcony": [True]})
+    ]
+    
+    mock_match.return_value = pd.DataFrame({
+        'reference_room_id': ['ref001'],
+        'reference_room_name': ['Superior Room, Mountain View'],
+        'supplier_room_id': ['sup001'],
+        'supplier_room_name': ['Superior Mountain View'],
+        'text_similarity': [0.85]
+    })
+    
     test_data = {
         "referenceCatalog": {
             "propertyId": "hotel123",
@@ -118,18 +141,9 @@ def test_match_rooms():
         "featureWeight": 0.3
     }
     
-    # Mock the model behavior
-    with patch('hotel_mapping.app.enhanced_room_matching') as mock_match:
-        mock_match.return_value = pd.DataFrame({
-            'reference_room_id': ['ref001'],
-            'reference_room_name': ['Superior Room, Mountain View'],
-            'supplier_room_id': ['sup001'],
-            'supplier_room_name': ['Superior Mountain View'],
-            'text_similarity': [0.85]
-        })
-        response = client.post("/api/match-rooms", json=test_data)
-        assert response.status_code == 200
-        # Add more assertions to verify response content
+    response = client.post("/api/match-rooms", json=test_data)
+    assert response.status_code == 200
+    # Add more assertions to verify response content
 
 if __name__ == '__main__':
     unittest.main() 
