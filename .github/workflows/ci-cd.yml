@@ -36,10 +36,10 @@ jobs:
         mkdir -p trained_model
         mkdir -p models
         
-    - name: Run unit tests with mocks
+    - name: Run unit tests
       run: |
-        
-        python -m pytest tests/ -v --mock-use-standalone-module
+       
+        python -m pytest tests/ -v
         
     - name: Run coverage tests
       run: |
