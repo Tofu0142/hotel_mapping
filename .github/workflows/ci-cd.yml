@@ -120,7 +120,10 @@ jobs:
           --memory 2Gi \
           --cpu 1 \
           --min-instances 0 \
-          --max-instances 10
+          --max-instances 10 \
+          --timeout 300s \
+          --port 8080 \
+          --set-env-vars="PYTHONUNBUFFERED=1"
     
     - name: Output service URL
       run: |
