@@ -1,0 +1,649 @@
+reference_hotel_id,reference_room_id,reference_room_name,reference_processed_name,supplier_room_id,supplier_room_name,supplier_processed_name,text_similarity
+13801035,1143346846,"Family Room, 1 King Bed",family room 1 king bed,314066177,"Family Room, 1 King Bed",family room 1 king bed,1.0
+13476761,1142189988,Classic Room,classic room,315661503,Classic Room,classic room,1.0
+13656727,1142650092,"Double Room, Shared Bathroom",double room shared bathroom,201147089,Double Room with Shared Bathroom,double room shared bathroom,1.0
+13534418,1141957014,Basic Cottage,basic cottage,321439169,Basic Cottage,basic cottage,1.0
+13678073,1142906303,"Deluxe Room, 2 Twin Beds",deluxe room 2 twin bed,201396935,"Deluxe Room, 2 Twin Beds",deluxe room 2 twin bed,1.0
+13946624,1143636203,"Standard Room, City View",standard room city view,218779182,"Standard Room, City View",standard room city view,1.0
+13435330,1142426438,"Standard Double Room, 1 Double Bed",standard double room 1 double bed,218445796,"Standard Double Room, 1 Double Bed",standard double room 1 double bed,1.0
+314920,31492001,Economy Double Room,economy double room,156519,Economy Double Room,economy double room,1.0
+13695892,1142121063,"Deluxe Room, Terrace",deluxe room terrace,213616884,"Deluxe Room, Terrace",deluxe room terrace,1.0
+7402929,740292906,Deluxe Double Room with Balcony,deluxe double room balcony,201272857,"Deluxe Double Room, Balcony",deluxe double room balcony,1.0
+9742336,974233605,Standard Villa,standard villa,320997979,Standard Villa,standard villa,1.0
+13636382,1142889441,"Deluxe Room, 1 King Bed, View",deluxe room 1 king bed view,201368923,"Deluxe Room, 1 King Bed, View",deluxe room 1 king bed view,1.0
+703998,70399804,Single Room with Shared Bathroom,single room shared bathroom,201778267,"Single Room, Shared Bathroom",single room shared bathroom,1.0
+13831558,1143429065,Comfort Single Room,comfort single room,339885,Comfort Single Room,comfort single room,1.0
+1947442,194744207,Deluxe King Suite,deluxe king suite,200283864,Deluxe King Suite,deluxe king suite,1.0
+13496868,1142466831,"Premium Triple Room, Balcony",premium triple room balcony,201364456,"Premium Triple Room, Balcony",premium triple room balcony,1.0
+13806329,1143364293,City Room,city room,200499768,City Room,city room,1.0
+531493,53149303,King Room with Kitchenette,king room kitchenette,321222078,King Room with Kitchenette,king room kitchenette,1.0
+13815668,1143387488,"Superior Apartment, 1 Bedroom",superior apartment 1 bedroom,320749416,"Superior Apartment, 1 Bedroom",superior apartment 1 bedroom,1.0
+13921970,1143610747,"House, 5 Bedrooms",house 5 bedroom,201788733,"House, 5 Bedrooms",house 5 bedroom,1.0
+13596402,1142572481,"Deluxe Double Room, 1 Double Bed",deluxe double room 1 double bed,230728115,"Deluxe Double Room, 1 Double Bed",deluxe double room 1 double bed,1.0
+13612641,1142322143,"Superior Apartment, 2 Bedrooms",superior apartment 2 bedroom,219021673,"Superior Apartment, 2 Bedrooms",superior apartment 2 bedroom,1.0
+10049574,1004957402,Bungalow,bungalow,314157243,Bungalow,bungalow,1.0
+1030222,103022205,Deluxe Queen Room,deluxe queen room,227172703,Deluxe Queen Room,deluxe queen room,1.0
+13510066,1142775634,"Family Apartment, 3 Bedrooms",family apartment 3 bedroom,201145179,"Family Apartment, 3 Bedrooms",family apartment 3 bedroom,1.0
+13490810,1142474725,Double Room (2 people),double room 2 person,200585903,Double Room (2 people),double room 2 person,1.0
+13527434,1142804873,"Executive Suite, 2 Bedrooms",executive suite 2 bedroom,201219692,"Executive Suite, 2 Bedrooms",executive suite 2 bedroom,1.0
+314920,31492002,Comfort Triple Room,comfort triple room,200974443,Comfort Triple Room,comfort triple room,1.0
+2275461,227546101,King Studio,king studio,218403829,King Studio,king studio,1.0
+4736066,473606601,Penthouse Apartment,penthouse apartment,201899238,Penthouse (Apartment),penthouse apartment,1.0
+13490793,1142215482,Standard Room,standard room,314401406,Standard Room,standard room,1.0
+13920743,1143595456,House,house,201139884,House,house,1.0
+13584264,1142333475,"Deluxe Room, 1 King Bed, Non Smoking, Refrigerator & Microwave",deluxe room 1 king bed non smoking refrigerator microwave,314934074,"Deluxe Room, 1 King Bed, Non Smoking, Refrigerator & Microwave",deluxe room 1 king bed non smoking refrigerator microwave,1.0
+13709990,1142403527,Executive Twin Room,executive twin room,230440168,Executive Twin Room,executive twin room,1.0
+13673033,1142067440,Panoramic Suite,panoramic suite,314355847,Panoramic Suite,panoramic suite,1.0
+13473067,1142186229,Basic Room,basic room,230465696,Basic Room,basic room,1.0
+13881789,1143489676,Deluxe Studio,deluxe studio,202176859,Deluxe Studio,deluxe studio,1.0
+13618325,1142330316,"Junior Suite, 1 King Bed with Sofa bed",junior suite 1 king bed sofa bed,212716652,"Junior Suite, 1 King Bed with Sofa bed",junior suite 1 king bed sofa bed,1.0
+11110844,1111084402,Apartment,apartment,200899818,Apartment,apartment,1.0
+13913925,1143563506,"Double Room, Mountain View",double room mountain view,211508298,"Double Room, Mountain View",double room mountain view,1.0
+13706970,1142948202,"Superior Double Room, Sea View",superior double room sea view,200907635,"Superior Double Room, Sea View",superior double room sea view,1.0
+13947517,1143646141,"Suite, Balcony, Sea View",suite balcony sea view,201146996,"Suite, Balcony, Sea View",suite balcony sea view,1.0
+13513892,1142482697,"Triple Room, Balcony",triple room balcony,201418273,"Triple Room, Balcony",triple room balcony,1.0
+13824693,1143399650,Romantic Apartment,romantic apartment,201145633,Romantic Apartment,romantic apartment,1.0
+13833405,1143433721,"Executive Suite, 1 King Bed, Smoking",executive suite 1 king bed smoking,201683680,"Executive Suite, 1 King Bed, Smoking",executive suite 1 king bed smoking,1.0
+13808604,1143419584,"Standard Double Room Single Use, 1 Double Bed",standard double room single use 1 double bed,200986284,"Standard Double Room Single Use, 1 Double Bed",standard double room single use 1 double bed,1.0
+284410,28441005,Superior Double Room with Terrace,superior double room terrace,34894,"Superior Double Room, Terrace",superior double room terrace,1.0
+4561647,456164701,Deluxe Single Room,deluxe single room,200372873,Deluxe Single Room,deluxe single room,1.0
+13620264,1142062722,Basic Shared Dormitory,basic shared dormitory,315872730,Basic Shared Dormitory,basic shared dormitory,1.0
+13651663,1142625177,"Twin Room, Smoking",twin room smoking,200895666,"Twin Room, Smoking",twin room smoking,1.0
+13458262,1142720917,Classic Double Room Single Use,classic double room single use,200162150,Classic Double Room Single Use,classic double room single use,1.0
+13917425,1143579081,"Deluxe Double Room, 1 Queen Bed",deluxe double room 1 queen bed,218740149,"Deluxe Double Room, 1 Queen Bed",deluxe double room 1 queen bed,1.0
+5516099,551609903,Apartment with Garden View,apartment garden view,220832677,"Apartment, Garden View",apartment garden view,1.0
+13584799,1142548195,"Superior Suite, 1 King Bed",superior suite 1 king bed,213010616,"Superior Suite, 1 King Bed",superior suite 1 king bed,1.0
+13676578,1142903046,Luxury Room,luxury room,201403315,Luxury Room,luxury room,1.0
+13696790,1142664454,"Deluxe Double Room, Garden View",deluxe double room garden view,201151530,"Deluxe Double Room, Garden View",deluxe double room garden view,1.0
+10937780,1093778013,Superior Studio,superior studio,202043734,Superior Studio,superior studio,1.0
+13801035,1143346796,"Room, 2 Twin Beds, Garden View",room 2 twin bed garden view,201285363,"Room, 2 Twin Beds, Garden View",room 2 twin bed garden view,1.0
+2849081,284908105,Superior Triple Room with Balcony,superior triple room balcony,217817437,"Superior Triple Room, Balcony",superior triple room balcony,1.0
+13947517,1143646139,"Double Room, Balcony, Sea View",double room balcony sea view,201408386,"Double Room, Balcony, Sea View",double room balcony sea view,1.0
+13834956,1143441105,"Deluxe Double or Twin Room, Balcony",deluxe double twin room balcony,201309240,"Deluxe Double or Twin Room, Balcony",deluxe double twin room balcony,1.0
+13899929,1143548386,"Apartment, 2 Bedrooms, Sea View",apartment 2 bedroom sea view,201390559,"Apartment, 2 Bedrooms, Sea View",apartment 2 bedroom sea view,1.0
+13697723,1142941275,"Executive Room, City View",executive room city view,201462537,"Executive Room, City View",executive room city view,1.0
+13801035,1143346179,"Suite, 1 Bedroom, Ocean View",suite 1 bedroom ocean view,213006356,"Suite, 1 Bedroom, Ocean View",suite 1 bedroom ocean view,1.0
+13620264,1142062708,Family Triple Room,family triple room,201011674,Family Triple Room,family triple room,1.0
+6798699,679869912,Superior Family Room,superior family room,201301644,Superior Family Room,superior family room,1.0
+1793265,179326501,Apartment with Sea View,apartment sea view,200913374,"Apartment, Sea View",apartment sea view,1.0
+13456915,1142444802,"Standard Triple Room, Private Bathroom",standard triple room private bathroom,201778130,"Standard Triple Room, Private Bathroom",standard triple room private bathroom,1.0
+9835458,983545801,Double Room with Balcony and Sea View,double room balcony sea view,201408386,"Double Room, Balcony, Sea View",double room balcony sea view,1.0
+13827139,1143412160,"Chalet, 2 Bedrooms",chalet 2 bedroom,201224054,"Chalet, 2 Bedrooms",chalet 2 bedroom,1.0
+13612764,1142868967,"Comfort Double or Twin Room, Balcony",comfort double twin room balcony,202064145,"Comfort Double or Twin Room, Balcony",comfort double twin room balcony,1.0
+13652223,1142083442,"Room, 1 Double Bed",room 1 double bed,217827722,"Room, 1 Double Bed",room 1 double bed,1.0
+13827139,1143412361,"Duplex, 1 Bedroom",duplex 1 bedroom,201566841,"Duplex, 1 Bedroom",duplex 1 bedroom,1.0
+688609,68860901,Double Room with Sea View,double room sea view,219001382,"Double Room, Sea View",double room sea view,1.0
+13920958,1143609148,"House, 4 Bedrooms",house 4 bedroom,201711812,"House, 4 Bedrooms",house 4 bedroom,1.0
+3867673,386767310,Standard,standard,315664927,Standard,standard,1.0
+13821186,1143386967,"Room, 1 Queen Bed, City View",room 1 queen bed city view,200986397,"Room, 1 Queen Bed, City View",room 1 queen bed city view,1.0
+13599990,1142579995,Two Bedroom Apartment,two bedroom apartment,33276,Two Bedroom Apartment,two bedroom apartment,1.0
+11085105,1108510505,Single Room with Mountain View,single room mountain view,201045861,"Single Room, Mountain View",single room mountain view,1.0
+13563054,1142000632,"Deluxe Double Room, 1 Queen Bed, Smoking",deluxe double room 1 queen bed smoking,200993904,"Deluxe Double Room, 1 Queen Bed, Smoking",deluxe double room 1 queen bed smoking,1.0
+13613468,1142870040,Family Room with Sea View,family room sea view,200367817,"Family Room, Sea View",family room sea view,1.0
+13908791,1143641639,"Deluxe Room, 1 Bedroom",deluxe room 1 bedroom,201334186,"Deluxe Room, 1 Bedroom",deluxe room 1 bedroom,1.0
+13584264,1142333454,"Deluxe Room, 1 King Bed, Smoking, Refrigerator & Microwave",deluxe room 1 king bed smoking refrigerator microwave,200694019,"Deluxe Room, 1 King Bed, Smoking, Refrigerator & Microwave",deluxe room 1 king bed smoking refrigerator microwave,1.0
+13834956,1143441134,"Suite, Balcony",suite balcony,201013385,"Suite, Balcony",suite balcony,1.0
+13646539,1142348221,Honeymoon Suite,honeymoon suite,200292882,Honeymoon Suite,honeymoon suite,1.0
+13623004,1142042183,"Superior Double Room, City View",superior double room city view,201009772,"Superior Double Room, City View",superior double room city view,1.0
+13634183,1142613926,"Deluxe Room, 1 King Bed, City View",deluxe room 1 king bed city view,213620096,"Deluxe Room, 1 King Bed, City View",deluxe room 1 king bed city view,1.0
+13559714,1142269739,Royal Suite,royal suite,201369095,Royal Suite,royal suite,1.0
+703998,70399803,Twin Room with Private Bathroom,twin room private bathroom,201612067,"Twin Room, Private Bathroom",twin room private bathroom,1.0
+703998,70399805,Standard Twin Room with Shared Bathroom,standard twin room shared bathroom,200300705,"Standard Twin Room, Shared Bathroom",standard twin room shared bathroom,1.0
+9211609,921160901,Studio with Terrace,studio terrace,201612335,"Studio, Terrace",studio terrace,1.0
+13612764,1142869002,"Comfort Triple Room, Balcony",comfort triple room balcony,314299703,"Comfort Triple Room, Balcony",comfort triple room balcony,1.0
+13821730,1143389546,"Double Room, Balcony",double room balcony,314266337,"Double Room, Balcony",double room balcony,1.0
+13673233,1142347418,"Junior Suite, Balcony, Sea View",junior suite balcony sea view,200183929,"Junior Suite, Balcony, Sea View",junior suite balcony sea view,1.0
+13824515,1143391192,"Superior Room, Garden View",superior room garden view,201416349,"Superior Room, Garden View",superior room garden view,1.0
+13564833,1142003454,"Standard Double Room, Non Smoking",standard double room non smoking,218139520,"Standard Double Room, Non Smoking",standard double room non smoking,1.0
+13634183,1142613499,"Deluxe Suite, 1 King Bed",deluxe suite 1 king bed,232544525,"Deluxe Suite, 1 King Bed",deluxe suite 1 king bed,1.0
+27719,2771906,Deluxe Quadruple Room,deluxe quadruple room,201312425,Deluxe Quadruple Room,deluxe quadruple room,1.0
+13559839,1142538071,Twin Room (2 adults and 1 child),twin room 2 adult 1 child,201796446,Twin Room (2 Adults + 1 Child),twin room 2 adult 1 child,1.0
+13941206,1143568584,Economy Shared Dormitory,economy shared dormitory,201240893,Economy Shared Dormitory,economy shared dormitory,1.0
+13566551,1142276787,Flexible Room (room change),flexible room room change,213602629,Flexible Room (room change),flexible room room change,1.0
+8908562,890856202,Duplex Apartment,duplex apartment,316643841,Duplex Apartment,duplex apartment,1.0
+13488251,1142471575,Studio,studio,201045390,Studio,studio,1.0
+13656905,1142361212,Japanese Style Room,japanese style room,201034766,Japanese Style Room,japanese style room,1.0
+13833472,1143434258,"Economy Double Room, Annex Building (basement)",economy double room annex building basement,213310193,"Economy Double Room, Annex Building (basement)",economy double room annex building basement,1.0
+13450232,1141896227,Deluxe  Premier,deluxe premier,200984384,Deluxe Premier,deluxe premier,1.0
+13527434,1142805006,Executive Double Room Single Use,executive double room single use,200216671,Executive Double Room Single Use,executive double room single use,1.0
+13834282,1143438317,"Standard Double Room, 1 Bedroom",standard double room 1 bedroom,200939078,"Standard Double Room, 1 Bedroom",standard double room 1 bedroom,1.0
+8063899,806389904,Deluxe Double Room (2 Adults + 1 Child),deluxe double room 2 adult 1 child,202169473,Deluxe Double Room (2 Adults + 1 Child),deluxe double room 2 adult 1 child,1.0
+13461584,1142449691,"Premium Apartment, 2 Bedrooms",premium apartment 2 bedroom,200918813,"Premium Apartment, 2 Bedrooms",premium apartment 2 bedroom,1.0
+13673033,1142066630,Grand Room,grand room,28646,Grand Room,grand room,1.0
+7547579,754757914,Classic Triple Room,classic triple room,230750408,Classic Triple Room,classic triple room,1.0
+13522931,1142773872,"Single Room, Smoking",single room smoking,200009095,"Single Room, Smoking",single room smoking,1.0
+13418511,1141847503,"Room, 1 King Bed, Smoking",room 1 king bed smoking,201103792,"Room, 1 King Bed, Smoking",room 1 king bed smoking,1.0
+13565174,1142820903,Premium Double or Twin Room,premium double twin room,201255155,Premium Double or Twin Room,premium double twin room,1.0
+13893092,1143524935,"Apartment, 1 Bedroom, Terrace",apartment 1 bedroom terrace,202355685,"Apartment, 1 Bedroom, Terrace",apartment 1 bedroom terrace,1.0
+13418511,1141847316,"Studio Suite, 1 King Bed, Non Smoking",studio suite 1 king bed non smoking,200235699,"Studio Suite, 1 King Bed, Non Smoking",studio suite 1 king bed non smoking,1.0
+13945533,1143628625,"Basic Double Room, 1 Double Bed, Non Smoking",basic double room 1 double bed non smoking,202105349,"Basic Double Room, 1 Double Bed, Non Smoking",basic double room 1 double bed non smoking,1.0
+13825213,1143401965,Signature Room,signature room,316336762,Signature Room,signature room,1.0
+7402929,740292905,Superior King Room,superior king room,200065978,Superior King Room,superior king room,1.0
+13825213,1143401921,Design Room,design room,217536801,Design Room,design room,1.0
+13615079,1142597757,Family Apartment,family apartment,201281891,Family Apartment,family apartment,1.0
+13702352,1142126107,"Standard Apartment, 1 Bedroom",standard apartment 1 bedroom,201660723,"Standard Apartment, 1 Bedroom",standard apartment 1 bedroom,1.0
+13440384,1142430244,Apartment (A ),apartment,200899818,Apartment,apartment,1.0
+13803141,1143355998,"Family Apartment, 2 Bedrooms, Garden View",family apartment 2 bedroom garden view,201232366,"Family Apartment, 2 Bedrooms, Garden View",family apartment 2 bedroom garden view,1.0
+4494510,449451013,Triple Room with Private Bathroom,triple room private bathroom,213305585,"Triple Room, Private Bathroom",triple room private bathroom,1.0
+13834888,1143441709,Junior Studio Suite,junior studio suite,219974362,Junior Studio Suite,junior studio suite,1.0
+13946804,1143637135,"aloft, Room, 1 King Bed",aloft room 1 king bed,219010588,"aloft, Room, 1 King Bed",aloft room 1 king bed,1.0
+805888,80588809,Deluxe Two Bedroom Suite,deluxe two bedroom suite,201287748,Deluxe Two Bedroom Suite,deluxe two bedroom suite,1.0
+13564833,1142003471,"Standard Twin Room, Non Smoking",standard twin room non smoking,503139,"Standard Twin Room, Non Smoking",standard twin room non smoking,1.0
+13513892,1142482178,"Apartment, Balcony",apartment balcony,220846012,Apartment with Balcony,apartment balcony,1.0
+13458262,1142720960,Executive Double or Twin Room,executive double twin room,200432,Executive Double or Twin Room,executive double twin room,1.0
+1580399,158039911,Executive King Room,executive king room,201542798,Executive King Room,executive king room,1.0
+13621871,1142381685,"Superior Double Room, 1 King Bed",superior double room 1 king bed,219307132,"Superior Double Room, 1 King Bed",superior double room 1 king bed,1.0
+13903290,1143540036,Luxury Apartment,luxury apartment,316093805,Luxury Apartment,luxury apartment,1.0
+13943749,1143619811,Traditional Quadruple Room,traditional quadruple room,201948820,Traditional Quadruple Room,traditional quadruple room,1.0
+13839070,1143454539,"Family Room, Connecting Rooms",family room connecting room,202256601,"Family Room, Connecting Rooms",family room connecting room,1.0
+13903842,1143540827,Apartment (3 Bedrooms),apartment 3 bedroom,201014683,"Apartment, 3 Bedrooms",apartment 3 bedroom,1.0
+13545446,1142799495,Junior Suite Ocean View,junior suite ocean view,210300718,Junior Suite Ocean View,junior suite ocean view,1.0
+13537531,1142240855,Family Twin Room,family twin room,218711471,Family Twin Room,family twin room,1.0
+13584799,1142548662,"Deluxe Twin Room, Multiple Beds",deluxe twin room multiple bed,201797327,"Deluxe Twin Room, Multiple Beds",deluxe twin room multiple bed,1.0
+13815668,1143387385,"Standard Apartment, 2 Bedrooms",standard apartment 2 bedroom,201218042,"Standard Apartment, 2 Bedrooms",standard apartment 2 bedroom,1.0
+13920661,1143595328,"House, 3 Bedrooms",house 3 bedroom,201681764,"House, 3 Bedrooms",house 3 bedroom,1.0
+13833472,1143434309,Double Room (2 Adults + 1 Child),double room 2 adult 1 child,201380356,Double Room (2 adults and 1 child),double room 2 adult 1 child,1.0
+805888,80588808,One Bedroom Suite ,one bedroom suite,201029591,One Bedroom Suite,one bedroom suite,1.0
+13822113,1143391037,Design Studio Suite,design studio suite,215420513,Design Studio Suite,design studio suite,1.0
+13612764,1142869014,"Superior Double or Twin Room, Balcony",superior double twin room balcony,201010706,"Superior Double or Twin Room, Balcony",superior double twin room balcony,1.0
+13599242,1142306690,Single Room (Private Bathroom),single room private bathroom,200999824,"Single Room, Private Bathroom",single room private bathroom,1.0
+13908791,1143641666,Executive Studio,executive studio,315593205,Executive Studio,executive studio,1.0
+2894793,289479319,Classic Quadruple Room,classic quadruple room,218161046,Classic Quadruple Room,classic quadruple room,1.0
+1034923,103492313,Three Bedroom Apartment,three bedroom apartment,286705,Three Bedroom Apartment,three bedroom apartment,1.0
+13684014,1142651670,Premier Double Room,premier double room,200040051,Premier Double Room,premier double room,1.0
+13826341,1143408345,"Deluxe Twin Room, Ocean View",deluxe twin room ocean view,210900373,"Deluxe Twin Room, Ocean View",deluxe twin room ocean view,1.0
+13695892,1142121070,"Room, 1 Double Bed, Non Smoking",room 1 double bed non smoking,200900335,"Room, 1 Double Bed, Non Smoking",room 1 double bed non smoking,1.0
+5624072,562407201,Single Room with Balcony,single room balcony,201899031,"Single Room, Balcony",single room balcony,1.0
+1280883,128088319,Budget Double Room,budget double room,314009079,Budget Double Room,budget double room,1.0
+13656727,1142650079,"Twin Room, Shared Bathroom",twin room shared bathroom,200976792,"Twin Room, Shared Bathroom",twin room shared bathroom,1.0
+13656364,1142359963,"Room, 2 Queen Beds, Non Smoking",room 2 queen bed non smoking,212417147,"Room, 2 Queen Beds, Non Smoking",room 2 queen bed non smoking,1.0
+13830385,1143423498,Superior Triple Room,superior triple room,314046681,Superior Triple Room,superior triple room,1.0
+299950,29995019,Deluxe Double or Twin Room with Sea View,deluxe double twin room sea view,219021635,"Deluxe Double or Twin Room, Sea View",deluxe double twin room sea view,1.0
+10131804,1013180404,Double Room with Shared Bathroom,double room shared bathroom,201147089,Double Room with Shared Bathroom,double room shared bathroom,1.0
+13644332,1142074512,Superior King,superior king,315788133,Superior King,superior king,1.0
+13638467,1142923882,Design Apartment,design apartment,314079718,Design Apartment,design apartment,1.0
+13648572,1142621234,Comfort Room,comfort room,224886,Comfort Room,comfort room,1.0
+13612764,1142869058,"Room, 1 Queen Bed",room 1 queen bed,201532711,"Room, 1 Queen Bed",room 1 queen bed,1.0
+13520213,1142225482,Three Bedroom Penthouse,three bedroom penthouse,219004849,Three Bedroom Penthouse,three bedroom penthouse,1.0
+399566,39956610,Standard Family Room,standard family room,201147190,Standard Family Room,standard family room,1.0
+13724364,1141993754,"Basic Double Room Single Use, 1 Double Bed",basic double room single use 1 double bed,201216530,"Basic Double Room Single Use, 1 Double Bed",basic double room single use 1 double bed,1.0
+13526852,1142510158,Executive Suite,executive suite,200512714,Executive Suite,executive suite,1.0
+13804522,1143356103,Club Room,club room,201027435,Club Room,club room,1.0
+1577254,157725403,Twin Room with Shared Bathroom,twin room shared bathroom,200976792,"Twin Room, Shared Bathroom",twin room shared bathroom,1.0
+13684646,1141856022,"Junior Suite, Garden View",junior suite garden view,318147736,"Junior Suite, Garden View",junior suite garden view,1.0
+7547579,754757903,Double or Twin Room,double twin room,200991883,Double or Twin Room,double twin room,1.0
+13623566,1142856910,"Studio, 1 Queen Bed with Sofa bed",studio 1 queen bed sofa bed,113196,"Studio, 1 Queen Bed with Sofa bed",studio 1 queen bed sofa bed,1.0
+13442931,1142703582,"Deluxe Double Room, Balcony, Sea View",deluxe double room balcony sea view,201220931,"Deluxe Double Room, Balcony, Sea View",deluxe double room balcony sea view,1.0
+171599,17159901,Suite with Pool View,suite pool view,316223313,"Suite, Pool View",suite pool view,1.0
+13912665,1143555551,"Double Room, Shared Bathroom (A)",double room shared bathroom,201147089,Double Room with Shared Bathroom,double room shared bathroom,1.0
+13682247,1142926763,"Room, 1 King Bed, Accessible, Non Smoking (Mobility Accessible)",room 1 king bed accessible non smoking mobility accessible,216046567,"Room, 1 King Bed, Accessible, Non Smoking (Mobility Accessible)",room 1 king bed accessible non smoking mobility accessible,1.0
+13946587,1143635911,Run Of the House,run house,232802588,Run of the House,run house,1.0
+13941661,1143599435,"Economy Quadruple Room, Non Smoking",economy quadruple room non smoking,315583423,"Economy Quadruple Room, Non Smoking",economy quadruple room non smoking,1.0
+13854774,1143465504,House (4 Bedrooms),house 4 bedroom,201711812,"House, 4 Bedrooms",house 4 bedroom,1.0
+13826730,1143410474,"Executive Room, Balcony",executive room balcony,218430154,"Executive Room, Balcony",executive room balcony,1.0
+8821251,882125101,Double Room with Terrace,double room terrace,201013611,"Double Room, Terrace",double room terrace,1.0
+13493485,1141934132,"Twin Room, 2 Twin Beds",twin room 2 twin bed,201416350,"Twin Room, 2 Twin Beds",twin room 2 twin bed,1.0
+13636382,1142889131,"Premium Room, 2 Twin Beds",premium room 2 twin bed,214938281,"Premium Room, 2 Twin Beds",premium room 2 twin bed,1.0
+13442931,1142703531,"Standard Double Room, Balcony, Sea View",standard double room balcony sea view,201019975,"Standard Double Room, Balcony, Sea View",standard double room balcony sea view,1.0
+8550329,855032907,Duplex Suite,duplex suite,201183502,Duplex Suite,duplex suite,1.0
+13545880,1141982919,"Standard Room, 2 Double Beds",standard room 2 double bed,200120451,"Standard Room, 2 Double Beds",standard room 2 double bed,1.0
+1034923,103492319,Standard Single Room,standard single room,85681,Standard Single Room,standard single room,1.0
+6440917,644091703,Studio with Pool View,studio pool view,200905747,"Studio, Pool View",studio pool view,1.0
+13821186,1143387007,"Room, 1 King Bed, City View",room 1 king bed city view,214547645,"Room, 1 King Bed, City View",room 1 king bed city view,1.0
+22544,2254410, Double Room,double room,201310899,Double Room,double room,1.0
+13819986,1143386254,"Double or Twin Room, 1 Bedroom",double twin room 1 bedroom,201235073,"Double or Twin Room, 1 Bedroom",double twin room 1 bedroom,1.0
+8009535,800953503,Two Bedroom Apartment ,two bedroom apartment,286704,Two Bedroom Apartment,two bedroom apartment,1.0
+13620866,1142845362,"Standard Room, 1 Double Bed, Balcony",standard room 1 double bed balcony,201317826,"Standard Room, 1 Double Bed, Balcony",standard room 1 double bed balcony,1.0
+13527434,1142805089,Superior Double Room Single Use,superior double room single use,210607932,Superior Double Room Single Use,superior double room single use,1.0
+13943749,1143619837,Comfort Quadruple Room,comfort quadruple room,201019896,Comfort Quadruple Room,comfort quadruple room,1.0
+13824598,1143435904,"Standard Room, Multiple Beds, Non Smoking",standard room multiple bed non smoking,201265453,"Standard Room, Multiple Beds, Non Smoking",standard room multiple bed non smoking,1.0
+9298432,929843205,Deluxe Double Room with Sea View,deluxe double room sea view,230130295,"Deluxe Double Room, Sea View",deluxe double room sea view,1.0
+1691636,169163607,Bungalow with Garden View,bungalow garden view,202036016,"Bungalow, Garden View",bungalow garden view,1.0
+10937780,1093778010,Standard Triple Room,standard triple room,201043169,Standard Triple Room,standard triple room,1.0
+13820382,1143385332,Superior Double or Twin Room,superior double twin room,218470810,Superior Double or Twin Room,superior double twin room,1.0
+13843735,1143480555,Villa (3 Bedrooms),villa 3 bedroom,37102,"Villa, 3 Bedrooms",villa 3 bedroom,1.0
+13519673,1142234363,Premier Room,premier room,201013186,Premier Room,premier room,1.0
+13830686,1143424943,"Double Room, 1 King Bed",double room 1 king bed,200035895,"Double Room, 1 King Bed",double room 1 king bed,1.0
+363669,36366904,Superior Twin Room,superior twin room,201023148,Superior Twin Room,superior twin room,1.0
+13826341,1143408246,"Deluxe Double Room, Ocean View",deluxe double room ocean view,202054123,"Deluxe Double Room, Ocean View",deluxe double room ocean view,1.0
+13428698,1142148346,"Double Room, Private Bathroom",double room private bathroom,201340900,"Double Room, Private Bathroom",double room private bathroom,1.0
+13823510,1143397684,"Deluxe Room, 1 Queen Bed",deluxe room 1 queen bed,201949327,"Deluxe Room, 1 Queen Bed",deluxe room 1 queen bed,1.0
+1356730,135673003,Studio with Sea View,studio sea view,229515085,"Studio, Sea View",studio sea view,1.0
+13505883,1142489778,"Deluxe Room, 1 Double Bed",deluxe room 1 double bed,314005889,"Deluxe Room, 1 Double Bed",deluxe room 1 double bed,1.0
+13946624,1143636098,"Standard Room, Sea View",standard room sea view,200910793,"Standard Room, Sea View",standard room sea view,1.0
+13661490,1142637138,"Standard Room, 1 Double Bed",standard room 1 double bed,201317820,"Standard Room, 1 Double Bed",standard room 1 double bed,1.0
+13691308,1142934348,"Superior Twin Room, Non Smoking",superior twin room non smoking,230758779,"Superior Twin Room, Non Smoking",superior twin room non smoking,1.0
+13498569,1142203308,"Superior Room, 2 Twin Beds",superior room 2 twin bed,201315206,"Superior Room, 2 Twin Beds",superior room 2 twin bed,1.0
+13696790,1141861358,"Family Suite, Ocean View",family suite ocean view,200912824,Family Suite Ocean view,family suite ocean view,1.0
+13450232,1141896243,Deluxe,deluxe,219141624,Deluxe,deluxe,1.0
+13673233,1142347774,"Superior Double Room, 1 Double Bed",superior double room 1 double bed,200013719,"Superior Double Room, 1 Double Bed",superior double room 1 double bed,1.0
+11392806,1139280602,Single Room with Private Bathroom,single room private bathroom,200999824,"Single Room, Private Bathroom",single room private bathroom,1.0
+13898218,1143546457,Junior Studio,junior studio,315903806,Junior Studio,junior studio,1.0
+7547579,754757916,Suite with Balcony,suite balcony,201013385,"Suite, Balcony",suite balcony,1.0
+13656364,1142359952,"Family Room, Multiple Beds, Non Smoking",family room multiple bed non smoking,213006459,"Family Room, Multiple Beds, Non Smoking",family room multiple bed non smoking,1.0
+1280883,128088320,Double Room with Balcony,double room balcony,314266337,"Double Room, Balcony",double room balcony,1.0
+6798699,679869913,Premium Quadruple Room,premium quadruple room,314089539,Premium Quadruple Room,premium quadruple room,1.0
+13696800,1142392943,Economy Quadruple Room,economy quadruple room,314141940,Economy Quadruple Room,economy quadruple room,1.0
+13899813,1143534188,2 bedroom apartment,2 bedroom apartment,201032820,2 Bedroom Apartment,2 bedroom apartment,1.0
+7402929,740292903,King Room with Balcony,king room balcony,314433901,King Room with Balcony,king room balcony,1.0
+13656364,1142360008,"Deluxe Room, 1 King Bed, Non Smoking, City View",deluxe room 1 king bed non smoking city view,201375065,"Deluxe Room, 1 King Bed, Non Smoking, City View",deluxe room 1 king bed non smoking city view,1.0
+13833472,1143434449,"Quadruple room (basement, in the annex)",quadruple room basement annex,200575690,"Quadruple room (basement, in the annex)",quadruple room basement annex,1.0
+1480520,148052003,Studio with Sea View ( 3 adults ),studio sea view 3 adult,218169575,"Studio, Sea View (3 adults)",studio sea view 3 adult,1.0
+13684014,1142651858,Premier Twin Room,premier twin room,219101634,Premier Twin Room,premier twin room,1.0
+13519673,1142234183,Deluxe Studio Suite,deluxe studio suite,229528110,Deluxe Studio Suite,deluxe studio suite,1.0
+5137084,513708403,Standard Quadruple Room,standard quadruple room,315722016,Standard Quadruple Room,standard quadruple room,1.0
+7032759,703275902,Suite,suite,321614419,Suite,suite,1.0
+13588168,1142838235,"Superior Suite, 1 Bedroom",superior suite 1 bedroom,201146892,"Superior Suite, 1 Bedroom",superior suite 1 bedroom,1.0
+252834,25283404,Double or Twin Room with Sea View,double twin room sea view,201010879,"Double or Twin Room, Sea View",double twin room sea view,1.0
+13652223,1142083472,"Room, 2 Twin Beds",room 2 twin bed,201339942,"Room, 2 Twin Beds",room 2 twin bed,1.0
+13578843,1142841402,"Junior Suite, Ocean View",junior suite ocean view,210300718,Junior Suite Ocean View,junior suite ocean view,1.0
+13522320,1141852417,Executive Room,executive room,201056561,Executive Room,executive room,1.0
+9871963,987196303,Deluxe Double or Twin Room with Balcony,deluxe double twin room balcony,201309240,"Deluxe Double or Twin Room, Balcony",deluxe double twin room balcony,1.0
+13478460,1141922378,Luxury One Bedroom Apartment,luxury one bedroom apartment,201603930,Luxury One Bedroom Apartment,luxury one bedroom apartment,1.0
+13834282,1143438105,Traditional Double Room,traditional double room,229855594,Traditional Double Room,traditional double room,1.0
+13941661,1143596435,"Economy Twin Room, 2 Twin Beds, Non Smoking",economy twin room 2 twin bed non smoking,202105612,"Economy Twin Room, 2 Twin Beds, Non Smoking",economy twin room 2 twin bed non smoking,1.0
+10937780,1093778012,Twin Room,twin room,200988954,Twin Room,twin room,1.0
+13917425,1143579122,"Deluxe Room, Multiple Beds",deluxe room multiple bed,217547703,"Deluxe Room, Multiple Beds",deluxe room multiple bed,1.0
+13818981,1143416716,Special Offer - Double Room,special offer double room,212411318,Special Offer Double room,special offer double room,1.0
+13836781,1143450604,"Suite, 2 Bedrooms, Kitchen",suite 2 bedroom kitchen,201152865,"Suite, 2 Bedrooms, Kitchen",suite 2 bedroom kitchen,1.0
+7730465,773046507,Quadruple Room with Balcony,quadruple room balcony,201500771,"Quadruple Room, Balcony",quadruple room balcony,1.0
+13831184,1143427059,"Superior Room, Sea View",superior room sea view,200156518,"Superior Room, Sea View",superior room sea view,1.0
+13892575,1143523970,Deluxe Double Studio,deluxe double studio,218427471,Deluxe double studio,deluxe double studio,1.0
+13559839,1142539395,Triple Room (3 adults),triple room 3 adult,314901352,Superior Triple Room (3 Adults),superior triple room 3 adult,0.9
+13652223,1142083422,"Junior Suite, 1 King Bed, Corner",junior suite 1 king bed corner,156507,"Junior Suite, 1 King Bed",junior suite 1 king bed,0.93
+13624243,1142862140,Superior Twin Room (with extra bed),superior twin room extra bed,201315206,"Superior Room, 2 Twin Beds",superior room 2 twin bed,0.93
+13914327,1143564897,"Family Villa, 3 Bedrooms",family villa 3 bedroom,212717876,"Villa, 3 Bedrooms",villa 3 bedroom,0.94
+13647520,1142348238,"Double Room, 1 Double Bed, Ensuite",double room 1 double bed ensuite,314054093,"Double Room, 1 Double Bed",double room 1 double bed,0.92
+13806329,1143362421,"Basic Room, 1 Bedroom, City View",basic room 1 bedroom city view,201050770,"Apartment, 1 Bedroom, City View",apartment 1 bedroom city view,0.8
+13510758,1142494059,"Family Suite, 2 Double Beds, Ocean View, Sea Facing",family suite 2 double bed ocean view sea facing,201050465,"Deluxe Double or Twin Room, 1 King Bed, Sea View, Sea Facing",deluxe double twin room 1 king bed sea view sea facing,0.8
+13802005,1143350730,Superior Premium Room,superior premium room,215444848,Premium Room,premium room,0.9
+13570608,1142830393,"Basic Single Room, Smoking (Basic Single Room, Smoking)",basic single room smoking basic single room smoking,314097865,"Basic Single Room, Non Smoking",basic single room non smoking,0.94
+13824598,1143435984,Standard Accessible Room,standard accessible room,201134775,"Room, Accessible",room accessible,0.9
+13800967,1143346239,"Studio, Accessible",studio accessible,217852965,ACCESSIBLE STUDIO,accessible studio,0.98
+13474374,1142730915,"Luxury House, 5 Bedrooms, Ocean View, Oceanfront",luxury house 5 bedroom ocean view oceanfront,201788928,"Family House, 5 Bedrooms, Ocean View, Sea Facing",family house 5 bedroom ocean view sea facing,0.92
+13585265,1142019423,Executive Single Room,executive single room,217843516,Executive Room (Single Use),executive room single use,0.92
+13800967,1143346462,"Premium Double or Twin Room, Balcony, Sea View",premium double twin room balcony sea view,201016355,"Classic Double or Twin Room, Balcony, Sea View",classic double twin room balcony sea view,0.96
+13519673,1142234294,"Grand Room, 1 King Bed (Premier)",grand room 1 king bed premier,211804359,"Grand Room, 1 King Bed",grand room 1 king bed,0.94
+13510758,1142494083,"Romantic Suite, 1 Bedroom, Bathtub, Ocean View",romantic suite 1 bedroom bathtub ocean view,202057555,"Romantic Suite, 1 King Bed, Bathtub",romantic suite 1 king bed bathtub,0.91
+13456915,1142444789,"Standard Double or Twin Room, Private Bathroom",standard double twin room private bathroom,200931989,"Standard Double Room, 2 Twin Beds, Private Bathroom",standard double room 2 twin bed private bathroom,0.95
+13526441,1141965518,"Twin Room, 2 Bedrooms, Smoking",twin room 2 bedroom smoking,201347706,"Room, 2 Twin Beds, Smoking",room 2 twin bed smoking,0.93
+13559714,1142269770,Corner Suite,corner suite,315584298,"Suite, Corner",suite corner,0.97
+13574245,1142834792,"Junior Suite, Pool Access, City View",junior suite pool access city view,202424001,Junior Suite Pool Access,junior suite pool access,0.9
+257725,25772503,Deluxe Family Suite,deluxe family suite,217842537,Family Suite (Deluxe),family suite deluxe,0.98
+13946587,1143635941,"Family Room, Garden View, Garden Area",family room garden view garden area,202441681,"Family Room, Garden View",family room garden view,0.96
+13834956,1143441349,Deluxe King Room with Balcony,deluxe king room balcony,314433901,King Room with Balcony,king room balcony,0.93
+13831972,1143420404,"Standard Suite, 1 Bedroom, Private Bathroom",standard suite 1 bedroom private bathroom,201041669,"Suite, Private Bathroom",suite private bathroom,0.91
+13800967,1143345413,Luxury One Bedroom Suite with Terrace,luxury one bedroom suite terrace,318630398,One Bedroom Suite Terrace,one bedroom suite terrace,0.97
+13910308,1143537548,"Luxury Room, Ensuite, Sea View (with Shower)",luxury room ensuite sea view shower,200367820,"Deluxe Room, Sea View (with Shower)",deluxe room sea view shower,0.9
+13923934,1143599565,"Comfort House, 2 Bedrooms",comfort house 2 bedroom,201024842,"Comfort Room, 2 Bedrooms",comfort room 2 bedroom,0.96
+13574819,1142835764,Deluxe Queen Room - 2 Queen beds,deluxe queen room 2 queen bed,200778766,"Deluxe Room, 2 Queen Beds",deluxe room 2 queen bed,0.97
+13520104,1142775799,"Family Quadruple Room, Shared Bathroom",family quadruple room shared bathroom,201288863,"Quadruple Room, Shared Bathroom",quadruple room shared bathroom,0.96
+13496316,1141928850,"Deluxe Double Room, Pool Access, Garden View",deluxe double room pool access garden view,200825446,"Double Room, Garden View (or Pool View)",double room garden view pool view,0.96
+269205,26920502,One-Bedroom Queen Suite with Sofa Bed,onebedroom queen suite sofa bed,200106493,"Suite, 1 Queen Bed with Sofa bed",suite 1 queen bed sofa bed,0.91
+13820694,1143397763,"Superior Room, Hill View",superior room hill view,201043445,"Superior Double Room, Hill View",superior double room hill view,0.92
+13923618,1143599136,"Family House, 3 Bedrooms, Pool View",family house 3 bedroom pool view,200905774,"Family Apartment, 2 Bedrooms, Pool View",family apartment 2 bedroom pool view,0.92
+4333727,433372702,Bunk Bed in Female Dormitory Room  ,bunk bed female dormitory room,220548831,Dormitory Room - 8 Bunk Beds,dormitory room 8 bunk bed,0.9
+13557737,1142526932,"Executive Room, 1 Bedroom",executive room 1 bedroom,202316043,"Executive Apartment, 1 Bedroom",executive apartment 1 bedroom,0.94
+13696800,1142393008,"Economy Single Room, 1 Twin Bed",economy single room 1 twin bed,212407629,"Economy Room, 1 Twin Bed",economy room 1 twin bed,0.95
+13664200,1142099030,"Comfort Apartment, 2 Bedrooms, Terrace, Sea View",comfort apartment 2 bedroom terrace sea view,201729772,"Comfort Apartment, 1 Bedroom, Terrace, Sea View",comfort apartment 1 bedroom terrace sea view,0.98
+13476387,1141916937,"Deluxe Villa, 4 Bedrooms",deluxe villa 4 bedroom,201030411,"Deluxe Villa, 1 Bedroom",deluxe villa 1 bedroom,0.95
+13801035,1143346959,"Room, 2 Twin Beds, Accessible, Ocean View",room 2 twin bed accessible ocean view,201383816,"Room, 2 Twin Beds, Sea View",room 2 twin bed sea view,0.93
+13702707,1142397774,"Japanese Style Twin Room, Shared Bathroom - Main Building",japanese style twin room shared bathroom main building,220810695,Japanese Style Room for 2 People (Shared Bathroom),japanese style room 2 person shared bathroom,0.9
+13418484,1141847079,"Room, 1 Queen Bed, Accessible, Non Smoking (Mobility, Roll-In Shower)",room 1 queen bed accessible non smoking mobility rollin shower,315888918,"Studio Suite, 2 Queen Beds, Accessible, Non Smoking (Mobility, Roll-In Shower)",studio suite 2 queen bed accessible non smoking mobility rollin shower,0.96
+13907824,1143641122,Deluxe Room (Creek View),deluxe room creek view,201899015,"Deluxe Room, Lake View",deluxe room lake view,0.91
+13429906,1142693006,Honeymoon Duplex Suite with Private Pool Villa,honeymoon duplex suite private pool villa,200907776,"Honeymoon Villa, Private Pool",honeymoon villa private pool,0.94
+9328377,932837708,Double or Twin Room with View,double twin room view,200257267,Double or Twin Room (Land View),double twin room land view,0.91
+13615079,1142597715,"Studio, Ground Floor",studio ground floor,201035061,Ground Floor Studio Room,ground floor studio room,0.95
+13908975,1143521961,Economy Double Room (#02),economy double room 02,200139117,Economy Double Room,economy double room,0.93
+13557048,1142534078,"Compact Single Room, Smoking",compact single room smoking,200009095,"Single Room, Smoking",single room smoking,0.94
+13510758,1142494070,"Panoramic Suite, 1 Bedroom, Ocean View, Sea Facing",panoramic suite 1 bedroom ocean view sea facing,213006356,"Suite, 1 Bedroom, Ocean View",suite 1 bedroom ocean view,0.9
+13888378,1143517806,Apartment (0 Bedroom),apartment 0 bedroom,201458604,"Apartment, 1 Bedroom",apartment 1 bedroom,0.81
+418661,41866108,Deluxe Double Room with Pool View,deluxe double room pool view,219001381,"Double Room, Pool View",double room pool view,0.95
+13456915,1142444771,"Standard Quadruple Room, Private Bathroom",standard quadruple room private bathroom,201612021,"Quadruple Room, Private Bathroom",quadruple room private bathroom,0.97
+13831600,1143429234,"Twin Room, Garden View",twin room garden view,201019964,"Standard Twin Room, Garden View",standard twin room garden view,0.97
+13831972,1143417905,"Deluxe Double Room, Private Bathroom",deluxe double room private bathroom,201015798,"Deluxe Twin Room, Private Bathroom",deluxe twin room private bathroom,0.95
+13842552,1143464020,Villa (6 Bedrooms),villa 6 bedroom,201527924,"Villa, 5 Bedrooms",villa 5 bedroom,0.95
+13418511,1141847408,"Studio Suite, 1 King Bed, Smoking",studio suite 1 king bed smoking,467633,"Studio Suite, 1 King Bed, Non Smoking",studio suite 1 king bed non smoking,0.94
+13491370,1142203917,"Double or Twin Room, Mountain View",double twin room mountain view,221450142,"Twin Room, Mountain View",twin room mountain view,0.97
+13664200,1142099007,"Comfort Apartment, 3 Bedrooms (with Garden)",comfort apartment 3 bedroom garden,201929635,"Comfort Apartment, 1 Bedroom, Garden View",comfort apartment 1 bedroom garden view,0.94
+7770431,777043103,Queen Room with Garden View,queen room garden view,214521113,Standard Queen Room with Garden View,standard queen room garden view,0.97
+13943749,1143619937,Basic Single Room,basic single room,200909856,Single Room,single room,0.93
+13868671,1143507418,"Apartment, 2 Bedrooms, Smoking, Balcony",apartment 2 bedroom smoking balcony,219019267,"Apartment, 2 Bedrooms, Balcony",apartment 2 bedroom balcony,0.9
+1357084,135708408,Double or Twin Room with Mountain View,double twin room mountain view,221450142,"Twin Room, Mountain View",twin room mountain view,0.97
+13802005,1143351970,Deluxe Premium Room with Balcony (Partially Sea View),deluxe premium room balcony partially sea view,201622507,"Deluxe Room, Balcony, Sea View",deluxe room balcony sea view,0.96
+13599242,1142306646,"Family House, 2 Bedrooms",family house 2 bedroom,201365803,"Family Room, 2 Bedrooms",family room 2 bedroom,0.94
+5828080,582808003,Single Room with Private External Bathroom,single room private external bathroom,200999824,"Single Room, Private Bathroom",single room private bathroom,0.94
+13668429,1142373620,Lake View Three Bedroom Apartment,lake view three bedroom apartment,201923679,"Apartment, 3 Bedrooms (Lakefront)",apartment 3 bedroom lakefront,0.95
+269205,26920501,King or Queen Studio with Sofa Bed,king queen studio sofa bed,200908552,Queen Studio with Sofa Bed,queen studio sofa bed,0.97
+13864493,1143487537,Cottage (1 Bedroom),cottage 1 bedroom,214504265,"Cottage, 2 Bedrooms",cottage 2 bedroom,0.93
+13634183,1142614158,"Deluxe Room, 2 Twin Beds, Lake View",deluxe room 2 twin bed lake view,232261529,"Deluxe Twin Room, 2 Twin Beds, Lake View",deluxe twin room 2 twin bed lake view,0.98
+13573356,1142833498,"Standard Double Room, 1 Double Bed, City View",standard double room 1 double bed city view,316268822,"Standard Room, 1 Double Bed, City View",standard room 1 double bed city view,0.98
+13611511,1142867638,"Family Room, 1 Bedroom, Lake View",family room 1 bedroom lake view,221403018,"Apartment, 1 Bedroom, Lake View",apartment 1 bedroom lake view,0.92
+13691308,1142934376,"Deluxe Twin Room, Accessible, Non Smoking",deluxe twin room accessible non smoking,213003484,"Deluxe Twin Room, Non Smoking",deluxe twin room non smoking,0.98
+13600522,1142334658,"306 Japanese/ Western Style Room, Non Smoking",306 japanese western style room non smoking,201033425,"Japanese Style Room, Non Smoking",japanese style room non smoking,0.91
+13432638,1142423927,"Deluxe Apartment, 3 Bedrooms, Balcony, Mountain View",deluxe apartment 3 bedroom balcony mountain view,200905621,"Apartment, 1 Bedroom, Balcony, Mountain View",apartment 1 bedroom balcony mountain view,0.94
+13518154,1142222161,"Standard Suite, 1 Bedroom, Kitchen (Suite)",standard suite 1 bedroom kitchen suite,201152856,"Suite, 1 Bedroom, Kitchen",suite 1 bedroom kitchen,0.94
+13526441,1141965547,"Twin Room, 2 Bedrooms, Non Smoking",twin room 2 bedroom non smoking,201347716,"Room, 2 Twin Beds, Non Smoking",room 2 twin bed non smoking,0.95
+13802005,1143352515,Deluxe Triple with Balcony (Sea View),deluxe triple balcony sea view,201374250,"Standard Triple Room, Balcony, Sea View (Triple)",standard triple room balcony sea view triple,0.93
+13604649,1142065164,"Deluxe Quadruple Room, Private Bathroom",deluxe quadruple room private bathroom,201612021,"Quadruple Room, Private Bathroom",quadruple room private bathroom,0.96
+2285852,228585203,Apartment 2,apartment 2,316390873,"Apartment, 2 Bedrooms (Apartment 2)",apartment 2 bedroom apartment 2,0.91
+13464152,1142451919,Traditional Double Room with Shared Bathroom,traditional double room shared bathroom,201037005,"Standard Double Room, Shared Bathroom",standard double room shared bathroom,0.96
+13421121,1142146696,"Standard Apartment, 2 Twin Beds",standard apartment 2 twin bed,201301430,"Standard Room, 2 Twin Beds",standard room 2 twin bed,0.94
+13695892,1142121057,"Deluxe Room, Garden Area",deluxe room garden area,201159091,"Deluxe Room, Garden View",deluxe room garden view,0.96
+13591528,1142844837,Deluxe Room (Pool Side),deluxe room pool side,200305688,"Deluxe Room, Pool View",deluxe room pool view,0.96
+13520104,1142775787,"Twin Room, Shared Bathroom, Sea View",twin room shared bathroom sea view,200897856,"Comfort Double or Twin Room, Shared Bathroom, Partial Sea View",comfort double twin room shared bathroom partial sea view,0.94
+13432638,1142423937,Superior Plus 2 Bedroom Apartment,superior plus 2 bedroom apartment,219021673,"Superior Apartment, 2 Bedrooms",superior apartment 2 bedroom,0.95
+13946587,1143635957,"Standard Room, Sea View, Sea Facing",standard room sea view sea facing,200905796,"Standard Room, Sea View",standard room sea view,0.95
+9864387,986438703,4-Bed Female Dormitory Room,4bed female dormitory room,201308192,1 bed in 4-bed female dormitory room,1 bed 4bed female dormitory room,0.91
+13574245,1142834885,"Signature Double Room, Balcony",signature double room balcony,200938013,"Standard Double Room, Balcony (Authentic)",standard double room balcony authentic,0.91
+4541236,454123602,One-Bedroom Apartment with Balcony,onebedroom apartment balcony,201455334,Two-bedroom apartment with balcony and city view,twobedroom apartment balcony city view,0.93
+298341,29834105,Single Bed in Mixed Dormitory Room,single bed mixed dormitory room,218401529,Bed in 9-Bed Mixed Dormitory Room,bed 9bed mixed dormitory room,0.91
+13919254,1143588624,Mixed Dormitory 8 Beds,mixed dormitory 8 bed,201216041,Bed in 8 Bed Mixed Dorm,bed 8 bed mixed dormitory,0.96
+190896,19089608,Suite with Sofa Bed,suite sofa bed,200106493,"Suite, 1 Queen Bed with Sofa bed",suite 1 queen bed sofa bed,0.92
+13432638,1142423863,"Standard Apartment, 3 Bedrooms, Mountain View",standard apartment 3 bedroom mountain view,219004033,"Standard Apartment, 2 Bedrooms, Mountain View",standard apartment 2 bedroom mountain view,0.93
+13557048,1142534139,"Compact Single Room, Non Smoking",compact single room non smoking,314097865,"Basic Single Room, Non Smoking",basic single room non smoking,0.94
+13908975,1143521209,Family Quadruple Room (#15),family quadruple room 15,201009200,Family Quadruple Room,family quadruple room,0.95
+13668429,1142373450,Lake View Two Bedroom Apartment,lake view two bedroom apartment,201558062,"Apartment, 2 Bedrooms, Lake View",apartment 2 bedroom lake view,0.97
+10937780,1093778016,Apartment - Split Level,apartment split level,201273055,Split level apartment,split level apartment,0.98
+13699143,1142666635,"Comfort Apartment, Balcony",comfort apartment balcony,201828820,"Comfort Apartment, 2 Bedrooms, Balcony",comfort apartment 2 bedroom balcony,0.92
+13947517,1143646216,"Duplex, 1 Bedroom, Balcony, Partial Ocean View",duplex 1 bedroom balcony partial ocean view,314002846,"Superior Condo, 1 Bedroom, Balcony, Partial Ocean View",superior condo 1 bedroom balcony partial ocean view,0.93
+8986989,898698901,Two-Bedroom Apartment,twobedroom apartment,315977558,Two-bedroom apartment Standard,twobedroom apartment standard,0.94
+8334591,833459101,Studio with Sofa Bed,studio sofa bed,200908552,Queen Studio with Sofa Bed,queen studio sofa bed,0.94
+13802005,1143352392,Deluxe Premium Room with Balcony,deluxe premium room balcony,311990,"Deluxe Room, Balcony",deluxe room balcony,0.96
+13429906,1142692967,2 Bedroom Family Pool Villa,2 bedroom family pool villa,201655806,Two bedroom Pool Villa,two bedroom pool villa,0.94
+13944808,1143624802,Family Room With Bathroom,family room bathroom,201184535,"Family Room, Shared Bathroom",family room shared bathroom,0.9
+13603779,1142584840,Duplex Comfort 1A,duplex comfort 1a,201001631,Comfort Duplex,comfort duplex,0.91
+13559714,1142269573,Superior Junior Suite,superior junior suite,202054719,Junior Suite (Superior),junior suite superior,0.98
+13604381,1142859919,Suite M - Courtyard View,suite m courtyard view,218158677,"Superior Suite, Courtyard View",superior suite courtyard view,0.92
+13912665,1143555213,"Double Room, Shared Bathroom (B)",double room shared bathroom b,201147089,Double Room with Shared Bathroom,double room shared bathroom,0.95
+13668429,1142373547,Lake Front Three Bedroom,lake front three bedroom,201923679,"Apartment, 3 Bedrooms (Lakefront)",apartment 3 bedroom lakefront,0.9
+13599307,1142036247,"Comfort Double Room, 1 Queen Bed, Non Smoking",comfort double room 1 queen bed non smoking,201511590,"Comfort Room, 1 Double Bed, Non Smoking",comfort room 1 double bed non smoking,0.96
+13520104,1142775809,"Double or Twin Room, Private Bathroom",double twin room private bathroom,201612067,"Twin Room, Private Bathroom",twin room private bathroom,0.96
+13478460,1141922407,Superior One Bedroom Apartment,superior one bedroom apartment,320749416,"Superior Apartment, 1 Bedroom",superior apartment 1 bedroom,0.95
+13827139,1143412223,"Chalet, 1 Bedroom",chalet 1 bedroom,201224054,"Chalet, 2 Bedrooms",chalet 2 bedroom,0.93
+13929686,1143600221,"Family House, 5 Bedrooms",family house 5 bedroom,201691672,"Family House, 4 Bedrooms",family house 4 bedroom,0.94
+6134499,613449903,Suite with Garden View,suite garden view,213308632,Suite (Garden),suite garden,0.92
+13604649,1142065174,"Comfort Double Room, Shared Bathroom",comfort double room shared bathroom,201147089,Double Room with Shared Bathroom,double room shared bathroom,0.93
+13884254,1143499341,"Basic Apartment, 1 Bedroom, Ocean View",basic apartment 1 bedroom ocean view,202426761,"Deluxe Apartment, 1 Bedroom, Ocean View",deluxe apartment 1 bedroom ocean view,0.96
+13824598,1143435884,Standard Spa Room,standard spa room,321506108,The Spa Room,spa room,0.92
+13714860,1141871720,Room (No Smoking (standard)),room no smoking standard,32807,"Standard Room, Non Smoking",standard room non smoking,0.93
+13714860,1142678876,Room (Vip),room vip,201033237,VIP Room,vip room,0.98
+13882747,1143504181,"Apartment, 1 Bedroom, Courtyard Area",apartment 1 bedroom courtyard area,201232176,"Apartment, 2 Bedrooms (The Courtyard 2)",apartment 2 bedroom courtyard 2,0.91
+8063899,806389901,Double Room with Private External Bathroom,double room private external bathroom,201340900,"Double Room, Private Bathroom",double room private bathroom,0.95
+13896861,1143647647,Jacuzzi Suite,jacuzzi suite,201129827,King Jacuzzi Tub Suite,king jacuzzi tub suite,0.9
+13575064,1142836025,Superior Japanese Style Room Smoking,superior japanese style room smoking,201033425,"Japanese Style Room, Non Smoking",japanese style room non smoking,0.9
+13573542,1142287672,Deluxe Room - with Breakfast,deluxe room breakfast,201259546,Deluxe Room (Breakfast for 2),deluxe room breakfast 2,0.96
+13825361,1143402617,"Superior Suite, Terrace, Pool View",superior suite terrace pool view,200999782,"Superior Room, Pool Access, Sea View (Terrace)",superior room pool access sea view terrace,0.93
+13920334,1143595119,Superior King or Twin Room,superior king twin room,200243834,Superior Twin Room,superior twin room,0.9
+13878788,1143513155,"Studio, Sea View (2)",studio sea view 2,229515085,"Studio, Sea View",studio sea view,0.93
+4726339,472633903,Superior Double or Twin Room with Mountain View,superior double twin room mountain view,201226991,"Superior Twin Room, Mountain View",superior twin room mountain view,0.98
+13907824,1143641099,Junior Suite Creek View,junior suite creek view,212418501,Junior Suite River View,junior suite river view,0.94
+13919857,1143591614,"Honeymoon Double Room, Ensuite, City View",honeymoon double room ensuite city view,201194238,"Honeymoon Double Room, City View",honeymoon double room city view,0.96
+4688439,468843902,Bed in Deluxe Mixed Dormitory,bed deluxe mixed dormitory,218401529,Bed in 9-Bed Mixed Dormitory Room,bed 9bed mixed dormitory room,0.9
+13490661,1141930563,Room (Ondol Room),room ondol room,218716879,Room (Ondol),room ondol,0.95
+13538889,1142516282,"Economy Double or Twin Room, Garden View",economy double twin room garden view,201034107,"Double or Twin Room, Garden View",double twin room garden view,0.9
+13695892,1142121032,"Room, Corner",room corner,218118265,Corner Room,corner room,0.96
+13584264,1142333511,"Deluxe Room, 2 Queen Beds, Accessible, Smoking",deluxe room 2 queen bed accessible smoking,229235615,"Deluxe Room, 1 Queen Bed, Accessible, Smoking",deluxe room 1 queen bed accessible smoking,0.98
+13527434,1142805024,"Deluxe Double Room Single Use, Annex Building",deluxe double room single use annex building,213013261,"Double Room, Annex Building",double room annex building,0.9
+13497645,1142541230,"Junior Suite, One Queen Bed",junior suite one queen bed,156507,"Junior Suite, 1 King Bed",junior suite 1 king bed,0.83
+489362,48936221,Queen Room with Two Queen Beds and Communications Mobility Accessible Roll-In Shower,queen room two queen bed communications mobility accessible rollin shower,321536104,"Room, 2 Queen Beds (Mobility Accessible, Roll-In Shower)",room 2 queen bed mobility accessible rollin shower,0.93
+13928879,1143594331,"Shared Dormitory, Mixed Dorm (10 guests)",shared dormitory mixed dormitory 10 guests,201522937,"Shared Dormitory, Mixed Dorm",shared dormitory mixed dormitory,0.91
+13487071,1142743269,"Standard Studio, 1 Queen Bed, Non Smoking, Kitchenette",standard studio 1 queen bed non smoking kitchenette,201013400,"Studio, 2 Queen Beds, Non Smoking, Kitchenette",studio 2 queen bed non smoking kitchenette,0.96
+190896,19089606,Honeymoon Suite with Private Jetted Tub,honeymoon suite private jetted tub,217822914,Honeymoon Suite (Outdoor Private Jetted Tub),honeymoon suite outdoor private jetted tub,0.97
+13598750,1142035537,"Economy Single Room, 1 Twin Bed, Non Smoking",economy single room 1 twin bed non smoking,202105612,"Economy Twin Room, 2 Twin Beds, Non Smoking",economy twin room 2 twin bed non smoking,0.93
+13908975,1143520726,Economy Triple Room (#08),economy triple room 08,320776054,Economy Triple Room,economy triple room,0.93
+13652223,1142083390,"Room, 2 Bedrooms",room 2 bedroom,201681717,"House, 2 Bedrooms",house 2 bedroom,0.93
+13830686,1143424956,"Deluxe Double or Twin Room, 1 King Bed",deluxe double twin room 1 king bed,37500,"Deluxe Double Room, 1 King Bed",deluxe double room 1 king bed,0.96
+13578843,1142841235,Junior Suite (Spa),junior suite spa,200987005,Junior Suite with Spa access,junior suite spa access,0.92
+13818981,1143416480,"Standard Double Room, 1 Queen Bed, City View",standard double room 1 queen bed city view,314042743,"Standard Room, 1 Queen Bed, City View",standard room 1 queen bed city view,0.93
+13445925,1141890044,"Standard Room, 1 Bedroom, Kitchen",standard room 1 bedroom kitchen,201152850,"Suite, 1 Bedroom, Kitchen",suite 1 bedroom kitchen,0.91
+13941661,1143599963,"Business Double Room, 1 Double Bed, Non Smoking",business double room 1 double bed non smoking,201347664,"Business Room, 2 Double Beds, Non Smoking",business room 2 double bed non smoking,0.97
+13418484,1141847089,"Room, 1 Queen Bed, Accessible, Non Smoking (Mobility, Bathtub w/ Grab Bars)",room 1 queen bed accessible non smoking mobility bathtub w grab bars,200865877,"Room, 1 Queen Bed, Accessible, Non Smoking (Bathtub w/ Grab Bars)",room 1 queen bed accessible non smoking bathtub w grab bars,0.97
+13575064,1142836036,Japanese Style Room Non-Smoking,japanese style room nonsmoking,201034766,Japanese Style Room,japanese style room,0.9
+13805911,1143363855,"Japanese Style Room B, Non Smoking",japanese style room b non smoking,201033425,"Japanese Style Room, Non Smoking",japanese style room non smoking,0.96
+13878788,1143513221,"Studio, Sea View (1)",studio sea view 1,229515085,"Studio, Sea View",studio sea view,0.93
+13657417,1142910053,"Luxury Room, 1 Bedroom, Non Smoking, Garden View",luxury room 1 bedroom non smoking garden view,201009633,"Superior Room, 1 Bedroom, Smoking, Garden View",superior room 1 bedroom smoking garden view,0.92
+560440,56044004,Classic Single Room with Balcony,classic single room balcony,200497834,"Standard Single Room, Balcony",standard single room balcony,0.93
+1030222,103022207,Small Single Room,small single room,200976870,Single Room,single room,0.93
+542027,54202702,Triple Room with Balcony and Sea View,triple room balcony sea view,201374250,"Standard Triple Room, Balcony, Sea View (Triple)",standard triple room balcony sea view triple,0.97
+13830385,1143423543,"Standard Room, 2 Twin Beds, Terrace",standard room 2 twin bed terrace,201052920,"Standard Room, 2 Twin Beds, View",standard room 2 twin bed view,0.9
+13805911,1143363900,Accessible Twin Room (With bath) Non Smoking,accessible twin room bath non smoking,202302154,"Premier Twin Room, Non Smoking (View Bath）",premier twin room non smoking view bath）,0.92
+13908975,1143520268,Economy Quadruple Room (#01),economy quadruple room 01,200931490,Economy quadruple room,economy quadruple room,0.96
+13851366,1143478848,"Villa, Sea View",villa sea view,202327787,"Standard Villa, Sea View",standard villa sea view,0.95
+13431690,1141880023,"Deluxe Single Room, 1 Queen Bed, Non Smoking",deluxe single room 1 queen bed non smoking,200028016,"Deluxe Room, 1 Queen Bed, Non Smoking",deluxe room 1 queen bed non smoking,0.98
+7547579,754757913,Two-Bedroom Suite,twobedroom suite,315977558,Two-bedroom apartment Standard,twobedroom apartment standard,0.91
+13563054,1142000636,"Comfort Single Room, 1 Twin Bed, Non Smoking",comfort single room 1 twin bed non smoking,201511590,"Comfort Room, 1 Double Bed, Non Smoking",comfort room 1 double bed non smoking,0.94
+5708491,1143117237,Triple Room with Pool View,triple room pool view,201159306,"Deluxe Triple Room, Pool View",deluxe triple room pool view,0.95
+13910308,1143536886,"Double or Twin Room, Ensuite",double twin room ensuite,217825013,"Standard Double or Twin Room, Ensuite",standard double twin room ensuite,0.97
+13567956,1142279017,"Double or Twin Room, 1 Large Twin Bed, Non Smoking",double twin room 1 large twin bed non smoking,314423838,"Basic Double Room, 2 Twin Beds, Non Smoking",basic double room 2 twin bed non smoking,0.94
+13922458,1143610763,"Townhome, 3 Bedrooms",townhome 3 bedroom,221769390,"Townhome, 3 Bedrooms (Happy Place)",townhome 3 bedroom happy place,0.95
+2350325,235032504,Double or Twin Room with Extra Bed,double twin room extra bed,200040053,Deluxe Double or Twin Room (with Extra Bed),deluxe double twin room extra bed,0.95
+13604381,1142859936,Suite XL with balcony and street view,suite xl balcony street view,201855892,"Suite, Balcony, City View",suite balcony city view,0.92
+13817782,1143414453,Ultimate With Balcony Sea view,ultimate balcony sea view,201227914,Balcony with Ocean View,balcony ocean view,0.91
+13801035,1143346344,"Suite, 1 King Bed, Terrace, Ocean View",suite 1 king bed terrace ocean view,201424610,"Luxury Room, 1 King Bed, Ocean View",luxury room 1 king bed ocean view,0.9
+13921644,1143596599,"Exclusive Villa, 2 Bedrooms",exclusive villa 2 bedroom,55675,"Villa, 2 Bedrooms",villa 2 bedroom,0.97
+13577769,1142026442,"Double or Twin Room, Non Smoking",double twin room non smoking,200899625,"Standard Double or Twin Room, Non Smoking",standard double twin room non smoking,0.96
+13855220,1143466007,Cottage (4 Bedrooms),cottage 4 bedroom,201788778,"House, 4 Bedrooms",house 4 bedroom,0.91
+13801035,1143346043,"Executive Room, 2 Twin Beds, Ocean View",executive room 2 twin bed ocean view,211507365,"Executive Room, 2 Twin Beds, Sea View",executive room 2 twin bed sea view,0.96
+13801035,1143346441,"Royal Room, 2 Bedrooms, Ocean View",royal room 2 bedroom ocean view,202270402,"Luxury Suite, 2 Bedrooms, Ocean View",luxury suite 2 bedroom ocean view,0.9
+13578843,1142841690,Junior Suite (Spa | Single Use),junior suite spa single use,200987005,Junior Suite with Spa access,junior suite spa access,0.92
+13919254,1143588603,Mixed Dormitory 6 Beds,mixed dormitory 6 bed,200179869,6 Bed Mixed Dorm With En-Suite,6 bed mixed dormitory ensuite,0.92
+13857286,1143476735,"Cottage, 1 Bedroom",cottage 1 bedroom,214504265,"Cottage, 2 Bedrooms",cottage 2 bedroom,0.93
+13476761,1142189954,"Deluxe Room, River View",deluxe room river view,201043106,"Deluxe Twin Room, River View",deluxe twin room river view,0.93
+13940961,1143631771,Comfort Shared Dormitory,comfort shared dormitory,201026267,"Comfort Shared Dormitory, Mixed Dorm",comfort shared dormitory mixed dormitory,0.94
+13845256,1143468037,"Villa, 1 Bedroom, Smoking, Private Pool",villa 1 bedroom smoking private pool,200670687,"Villa, 1 King Bed, Non Smoking (Private Pool)",villa 1 king bed non smoking private pool,0.93
+13659585,1142909831,"Quadruple Room, Private Bathroom (Annex)",quadruple room private bathroom annex,201612021,"Quadruple Room, Private Bathroom",quadruple room private bathroom,0.92
+13839087,1143454719,"Deluxe Bungalow, Garden Area",deluxe bungalow garden area,201227299,"Deluxe Bungalow, Garden View",deluxe bungalow garden view,0.97
+13843874,1143466055,"Luxury Villa, 3 Bedrooms",luxury villa 3 bedroom,37102,"Villa, 3 Bedrooms",villa 3 bedroom,0.96
+13848265,1143472561,"Luxury Villa, 2 Bedrooms, Kitchen, Garden View",luxury villa 2 bedroom kitchen garden view,201872924,"Premium Apartment, 2 Bedrooms, Kitchen, Garden View",premium apartment 2 bedroom kitchen garden view,0.92
+13623004,1142042124,"Family Duplex, 2 Bedrooms",family duplex 2 bedroom,201304558,"Family Duplex, 1 Bedroom",family duplex 1 bedroom,0.95
+13897859,1143531639,"Apartment, 3 Bedrooms, Balcony",apartment 3 bedroom balcony,201518979,"Apartment, 3 Bedrooms, Balcony, View",apartment 3 bedroom balcony view,0.98
+13833405,1143433807,"Business Suite, 1 King Bed, Non Smoking",business suite 1 king bed non smoking,201683676,"Business Room, 1 King Bed, Non Smoking",business room 1 king bed non smoking,0.93
+13432638,1142423893,"Penthouse, 4 Bedrooms, Mountain View",penthouse 4 bedroom mountain view,202270361,"Luxury Penthouse, 1 Bedroom, Mountain View",luxury penthouse 1 bedroom mountain view,0.93
+13908975,1143521390,Economy Triple Room (#04),economy triple room 04,201514266,Economy Triple Room,economy triple room,0.9
+13802005,1143351133,Deluxe Family Suite with Balcony (Sea View),deluxe family suite balcony sea view,200959158,"Deluxe Suite, Balcony, Sea View",deluxe suite balcony sea view,0.97
+13878788,1143513187,"Studio, Sea View (7)",studio sea view 7,229515085,"Studio, Sea View",studio sea view,0.92
+8650436,865043603, Three-Bedroom Apartment - Penthouse,threebedroom apartment penthouse,217812163,Three Bedroom Penthouse Apartment,three bedroom penthouse apartment,0.94
+13611511,1142867539,Honeymoon Suite (Spa),honeymoon suite spa,200292882,Honeymoon Suite,honeymoon suite,0.9
+13545880,1141982942,Master Suite,master suite,200026071,Suite (Master),suite master,0.9
+13803141,1143355946,"Family Apartment, 1 Bedroom, Sea View (6 pax)",family apartment 1 bedroom sea view 6 pax,201235120,"Apartment, 1 Bedroom, Sea View (6 pax)",apartment 1 bedroom sea view 6 pax,0.95
+13908975,1143519894,Family Quadruple Room (#12),family quadruple room 12,201009200,Family Quadruple Room,family quadruple room,0.97
+13824515,1143396869,"Luxury Room, Sea View",luxury room sea view,201005145,"Luxury Apartment, Sea View",luxury apartment sea view,0.94
+13636101,1142614685,Single Room with Shared Bath Room,single room shared bath room,201778267,"Single Room, Shared Bathroom",single room shared bathroom,0.91
+345664,34566404,One-Bedroom Suite with Balcony,onebedroom suite balcony,201680118,"Doubleroom Suite, Balcony",doubleroom suite balcony,0.9
+13574245,1142834825,"Deluxe Double Room, 2 Double Beds, Balcony, City View",deluxe double room 2 double bed balcony city view,200984362,"Deluxe Double Room Single Use, 1 King Bed, Balcony, City View",deluxe double room single use 1 king bed balcony city view,0.96
+13944808,1143624674,Family Room Share Bathroom,family room share bathroom,201184535,"Family Room, Shared Bathroom",family room shared bathroom,0.97
+13644724,1142074795,"Apartment, 2 Bedrooms, Mountain View",apartment 2 bedroom mountain view,219004033,"Standard Apartment, 2 Bedrooms, Mountain View",standard apartment 2 bedroom mountain view,0.97
+2826210,282621003,Double or Twin Room with Shared Bathroom,double twin room shared bathroom,200976792,"Twin Room, Shared Bathroom",twin room shared bathroom,0.96
+6420392,642039207,King Room with Sea View,king room sea view,201424130,Deluxe King Room with Sea View,deluxe king room sea view,0.91
+13578843,1142841289,"Junior Suite, Partial Ocean View",junior suite partial ocean view,210300718,Junior Suite Ocean View,junior suite ocean view,0.97
+1480520,148052002,Studio with Sea View ( 2 Adults ),studio sea view 2 adult,218169575,"Studio, Sea View (3 adults)",studio sea view 3 adult,0.93
+1424413,142441310,Deluxe Family Room - Top Deck,deluxe family room top deck,200936213,Deluxe Room with Deck,deluxe room deck,0.91
+13880456,1143515882,"Superior Apartment, 1 Bedroom, Balcony, Partial Sea View",superior apartment 1 bedroom balcony partial sea view,201978635,"Superior Apartment, 1 Bedroom, Balcony, Sea View",superior apartment 1 bedroom balcony sea view,0.98
+13834888,1143441604,"Premium Double Room, Pool View",premium double room pool view,200994507,"Standard Double Room, Pool View",standard double room pool view,0.95
+13559839,1142537923,Superior Double Room (Interior),superior double room interior,201057801,Double Room (interior),double room interior,0.9
+13496316,1141928983,"Family Suite, 2 Bedrooms, Pool Access, Garden View",family suite 2 bedroom pool access garden view,201698843,"Family Suite, 2 Bedrooms, Pool View",family suite 2 bedroom pool view,0.95
+13824515,1143387116,"Premium Room, Garden View",premium room garden view,201008800,"Premium Double Room, Garden View",premium double room garden view,0.91
+13636382,1142889855,"Club Room, 1 Double Bed",club room 1 double bed,218431766,"Club Room, 2 Double Beds",club room 2 double bed,0.98
+13547002,1141984651,"Basic Double Room, 1 Queen Bed",basic double room 1 queen bed,202413038,"Double Room, 1 Queen Bed",double room 1 queen bed,0.97
+13888311,1143517722,"Exclusive Apartment, 2 Bedrooms, City View",exclusive apartment 2 bedroom city view,201050770,"Apartment, 1 Bedroom, City View",apartment 1 bedroom city view,0.92
+13507774,1142775431,Executive River View (Twin) Room,executive river view twin room,201224761,Executive Lake View Twin Room,executive lake view twin room,0.94
+13941661,1143595532,"Superior Double Room, 1 Double Bed, Non Smoking",superior double room 1 double bed non smoking,227131775,"Superior Room, 1 Double Bed, Non Smoking",superior room 1 double bed non smoking,0.97
+13923279,1143598682,"House, 1 Bedroom, Accessible, Smoking",house 1 bedroom accessible smoking,201219065,"Apartment, 1 Bedroom, Smoking",apartment 1 bedroom smoking,0.93
+391381,39138112,Queen Room with Two Queen Beds - Smoking,queen room two queen bed smoking,201350624,"Room, 2 Queen Beds, Smoking",room 2 queen bed smoking,0.95
+13821884,1143390348,"Villa 2 Bedroom Family Package, Private Pool",villa 2 bedroom family package private pool,201815963,"Villa, 2 Bedrooms, Private Pool",villa 2 bedroom private pool,0.9
+415891,41589104, Suite with Private Terrace ,suite private terrace,217529451,"Suite, Terrace",suite terrace,0.93
+13537376,1142236173,"Double Room, Multiple Beds",double room multiple bed,201220933,"Triple Room, Multiple Beds",triple room multiple bed,0.92
+13821884,1143390196,"Villa, 1 Bedroom, Private Pool",villa 1 bedroom private pool,201815963,"Villa, 2 Bedrooms, Private Pool",villa 2 bedroom private pool,0.97
+13578843,1142841514,Junior Suite Sea View (2 Children under 12 years old included),junior suite sea view 2 child under 12 years old included,201876045,"Junior Suite, Sea View (2 adults and 1 child)",junior suite sea view 2 adult 1 child,0.9
+1580399,158039902,Deluxe Twin Room with Two Double Beds,deluxe twin room two double bed,200040053,Deluxe Double or Twin Room (with Extra Bed),deluxe double twin room extra bed,0.95
+418661,41866104,Superior Double Room with Pool View,superior double room pool view,200915835,"Superior Twin Room, Pool View",superior twin room pool view,0.94
+13659585,1142909777,"Standard Twin Room, Private Bathroom",standard twin room private bathroom,201612067,"Twin Room, Private Bathroom",twin room private bathroom,0.96
+13531013,1142514807,"Hollywood Deluxe Twin Room, Non Smoking",hollywood deluxe twin room non smoking,213003484,"Deluxe Twin Room, Non Smoking",deluxe twin room non smoking,0.92
+13804522,1143358216,Club Suite,club suite,201019832,Club Suite Room,club suite room,0.94
+13947517,1143646218,"Presidential Apartment, 2 Bedrooms, Balcony, Sea View",presidential apartment 2 bedroom balcony sea view,201529502,"Apartment, 2 Bedrooms, Balcony, Sea View",apartment 2 bedroom balcony sea view,0.91
+190896,19089609,Royal Suite with Private Jetted Tub,royal suite private jetted tub,217822910,Premier Suite (Outdoor Private Jetted Tub),premier suite outdoor private jetted tub,0.9
+13941661,1143596749,"Economy Double Room, 1 Double Bed, Non Smoking",economy double room 1 double bed non smoking,201191637,"Economy Double Room, 1 Large Twin Bed, Non Smoking",economy double room 1 large twin bed non smoking,0.96
+13578843,1142841188,Junior Suite (Premium | Single Use),junior suite premium single use,217817456,Junior Suite (Single Use),junior suite single use,0.92
+418661,41866111,Junior Suite with Sofa Bed,junior suite sofa bed,212716652,"Junior Suite, 1 King Bed with Sofa bed",junior suite 1 king bed sofa bed,0.93
+13598750,1142035552,"Comfort Double Room, Non Smoking",comfort double room non smoking,201197729,"Comfort Double Room, Smoking",comfort double room smoking,0.95
+13613468,1142870051,Family Mountain View with Private Balcony,family mountain view private balcony,201417390,"Family Room, Balcony, Mountain View",family room balcony mountain view,0.93
+13947517,1143646292,"Deluxe Apartment, Balcony, Sea View",deluxe apartment balcony sea view,201622507,"Deluxe Room, Balcony, Sea View",deluxe room balcony sea view,0.96
+13815668,1143387434,Superior Studio (Triple),superior studio triple,230707089,Superior Triple Studio,superior triple studio,0.98
+13479909,1142193387,Room (Deluxe),room deluxe,200906964,Deluxe Room,deluxe room,0.97
+13836781,1143450573,"Suite, 3 Bedrooms, Kitchen",suite 3 bedroom kitchen,201152865,"Suite, 2 Bedrooms, Kitchen",suite 2 bedroom kitchen,0.92
+13714860,1142678860,Room (Standard room),room standard room,314401406,Standard Room,standard room,0.96
+13671848,1142609405,8 Bedrooms Private Pool Villa,8 bedroom private pool villa,201815963,"Villa, 2 Bedrooms, Private Pool",villa 2 bedroom private pool,0.93
+13894931,1143527629,"Standard Apartment, 2 Bedrooms, 2 Bathrooms (Res.3544  Suite 305)",standard apartment 2 bedroom 2 bathrooms res3544 suite 305,201989555,"Standard Apartment, 3 Bedrooms, 2 Bathrooms",standard apartment 3 bedroom 2 bathrooms,0.91
+13438054,1142699806,"Apartment, 2 Bedrooms, Pool View",apartment 2 bedroom pool view,200473693,"Apartment, 2 Bedrooms, Pool View (6)",apartment 2 bedroom pool view 6,0.97
+13714860,1142678870,Room (Premium),room premium,315739257,Premium Room,premium room,0.93
+1238004,123800401,Family Room with Bathroom,family room bathroom,201184535,"Family Room, Shared Bathroom",family room shared bathroom,0.9
+7845384,784538404,Double or Twin Room with Private Bathroom,double twin room private bathroom,201612067,"Twin Room, Private Bathroom",twin room private bathroom,0.96
+13800967,1143346418,Classic Room with Terrace,classic room terrace,213616884,"Deluxe Room, Terrace",deluxe room terrace,0.86
+7007499,700749906,Triple Room with Bathroom,triple room bathroom,213305585,"Triple Room, Private Bathroom",triple room private bathroom,0.87
+13889211,1143519166,"Luxury Apartment, Lake View",luxury apartment lake view,218132541,"Luxury Cabin, River View",luxury cabin river view,0.86
+13923174,1143598594,"Townhome, 5 Bedrooms",townhome 5 bedroom,221769394,"Townhome, 3 Bedrooms (Endless Summer)",townhome 3 bedroom endless summer,0.85
+13925461,1143601496,House (Multiple Bedrooms),house multiple bedroom,201711812,"House, 4 Bedrooms",house 4 bedroom,0.86
+13918755,1143586010,"Deluxe Double Room, Ensuite, Sea View (2nd flr deluxe king suite)",deluxe double room ensuite sea view 2nd flr deluxe king suite,201585943,"Deluxe Double Room, Ensuite",deluxe double room ensuite,0.87
+13613468,1142870014,Deluxe Pool View with Private Balcony,deluxe pool view private balcony,202305944,"Suite, Private Pool, Terrace",suite private pool terrace,0.86
+5190788,519078805,Bed in 4-Bed Male Dormitory Room,bed 4bed male dormitory room,218401529,Bed in 9-Bed Mixed Dormitory Room,bed 9bed mixed dormitory room,0.85
+13944808,1143624871,"Economy Triple Room, No Windows",economy triple room no window,201171074,Economy Single Room (No Window),economy single room no window,0.86
+13677352,1142907278,"Deluxe Suite, Non Smoking",deluxe suite non smoking,213016623,"Deluxe Suite, 1 King Bed, Non Smoking",deluxe suite 1 king bed non smoking,0.85
+13843558,1143480514,"Luxury Villa, 2 Bedrooms, Private Bathroom, Sea View",luxury villa 2 bedroom private bathroom sea view,200444033,"Luxury Villa, 4 Bedrooms, Private Pool, Sea View",luxury villa 4 bedroom private pool sea view,0.86
+7247014,724701402,Apartment with Lake View,apartment lake view,202253307,"Family Suite, Lake View",family suite lake view,0.87
+13671830,1142653788,Deluxe Room (with  AC),deluxe room ac,200906964,Deluxe Room,deluxe room,0.86
+13900908,1143536339,"Premium Condo, 1 Bedroom, Lake View, Corner",premium condo 1 bedroom lake view corner,219010515,"Premium Apartment, 1 Bedroom, River View",premium apartment 1 bedroom river view,0.87
+13947418,1143644458,Deluxe Suite (2-bedroom),deluxe suite 2bedroom,201147453,Deluxe Suite Room,deluxe suite room,0.87
+13494197,1142750674,"Grand Suite, 1 King Bed with Sofa bed, Sea View (Okyanus)",grand suite 1 king bed sofa bed sea view okyanus,217204844,"Deluxe Suite, 1 King Bed with Sofa bed, City View",deluxe suite 1 king bed sofa bed city view,0.85
+10245397,1024539701,Budget Twin Room,budget twin room,156496,"Small ""Budget"" Double Room",small budget double room,0.86
+284410,28441004,Authentic Double Room with Shared Bathroom and Toilet,authentic double room shared bathroom toilet,201037005,"Standard Double Room, Shared Bathroom",standard double room shared bathroom,0.85
+13712105,1142133370,4-Bedroom Luxury Villa,4bedroom luxury villa,201006702,Four Bedroom Villa with Spa,four bedroom villa spa,0.86
+13706970,1142948224,Family Room (Comfort),family room comfort,224886,Comfort Room,comfort room,0.85
+1565054,156505402,Deluxe Queen Studio ,deluxe queen studio,200908563,Queen Studio,queen studio,0.87
+13715834,1142679544,Room (Twin (Single and Double OTT)),room twin single double ott,200977124,Standard Double or Twin Room (Single Use),standard double twin room single use,0.85
+13918755,1143586070,"Standard Double Room, Ensuite (3rd flr cosy double rm 7)",standard double room ensuite 3rd flr cosy double rm 7,217825012,"Standard Double Room, Ensuite",standard double room ensuite,0.87
+13836781,1143450534,"2 Bedroom Suite, Kitchen, 2 Bathrooms",2 bedroom suite kitchen 2 bathrooms,83918,Two Bedroom Apartment with Two Bathrooms,two bedroom apartment two bathrooms,0.86
+13882747,1143506041,"Apartment, Multiple Beds, City View",apartment multiple bed city view,201050770,"Apartment, 1 Bedroom, City View",apartment 1 bedroom city view,0.87
+13566551,1142276838,"Economy Double or Twin Room, Non Smoking, City View",economy double twin room non smoking city view,202078584,"Standard Twin Room, Single Use, City View, Non Smoking",standard twin room single use city view non smoking,0.86
+13479909,1142193422,Room (Suite Party Room),room suite party room,201019832,Club Suite Room,club suite room,0.85
+13699144,1142124069,"Bunk Bed Twin Room, Non Smoking",bunk bed twin room non smoking,201193090,Bunk Twin Room,bunk twin room,0.85
+13519673,1142234141,"Premier Room, 2 Queen Beds (Grand)",premier room 2 queen bed grand,297684,"Standard Room, 2 Queen Beds",standard room 2 queen bed,0.87
+13625723,1142044067,Suite Room with mountain view,suite room mountain view,201399262,"Single Room, Mountain View",single room mountain view,0.86
+13946624,1143636019,"Family Twin Room, Ocean View (Assigned upon Check-In)",family twin room ocean view assigned upon checkin,202222159,Ocean View Twin Room,ocean view twin room,0.87
+13903547,1143540387,"Duplex, Sea View (Maisonette)",duplex sea view maisonette,201024222,"Apartment, Sea View (Maisonette)",apartment sea view maisonette,0.86
+13575064,1142836009,Japanese Western Style Room Non-Smoking,japanese western style room nonsmoking,201034766,Japanese Style Room,japanese style room,0.86
+13947363,1143643498,Roomy Terrace,roomy terrace,217529451,"Suite, Terrace",suite terrace,0.87
+13920880,1143595598,"Family Villa, 6 Bedrooms, Sauna, Pool View",family villa 6 bedroom sauna pool view,218461961,"Deluxe Studio Suite, 1 Bedroom, Sauna, Pool View",deluxe studio suite 1 bedroom sauna pool view,0.87
+13918755,1143585894,"Standard Double Room, Ensuite, Harbor View (2nd flr King room)",standard double room ensuite harbor view 2nd flr king room,202427548,"Double Room, Ensuite (Double Room with Sea View)",double room ensuite double room sea view,0.85
+13492896,1142477164,"Apartment, Balcony (Heivlinder)",apartment balcony heivlinder,316477494,"Apartment, Balcony",apartment balcony,0.87
+7166530,716653002,Superior Apartment with Sauna,superior apartment sauna,202162807,"Deluxe Apartment, Sauna (205)",deluxe apartment sauna 205,0.86
+13578843,1142841335,Junior Suite (Premium),junior suite premium,321577236,Junior Suite Plus,junior suite plus,0.87
+13940672,1143631604,"Accessible Room, 1 Full Bed",accessible room 1 full bed,216631705,"Room, Multiple Beds, Accessible",room multiple bed accessible,0.86
+13636101,1142614684,Japanese Style Room with Shared Bath Room,japanese style room shared bath room,201180850,Japanese Style Room with Outdoor Bath,japanese style room outdoor bath,0.86
+269205,26920503,Two-Bedroom Queen Suite with Sofa Bed,twobedroom queen suite sofa bed,200106493,"Suite, 1 Queen Bed with Sofa bed",suite 1 queen bed sofa bed,0.86
+13944808,1143624921,Family Room (2 Bunkbed) Share Bathroom,family room 2 bunkbed share bathroom,201612055,"Twin Room, Private Bathroom (Bunk Bed)",twin room private bathroom bunk bed,0.86
+13574245,1142834862,"Executive Suite, Kitchenette, Mountain View",executive suite kitchenette mountain view,202175409,"Standard Studio, Kitchenette, Mountain View",standard studio kitchenette mountain view,0.86
+1080702,108070202,Superior Queen Cabin,superior queen cabin,319381282,Superior Cabin,superior cabin,0.87
+13559714,1142269646,Superior View Junior Suite,superior view junior suite,200188786,Superior Suite (Junior),superior suite junior,0.85
+13559714,1142269782,Executive Junior Suite,executive junior suite,200512714,Executive Suite,executive suite,0.85
+13820027,1143395710,Villa Twin Room,villa twin room,55675,"Villa, 2 Bedrooms",villa 2 bedroom,0.85
+9855022,985502201,Maisonette,maisonette,201331612,Family Maisonette,family maisonette,0.85
+13877403,1143510996,Deluxe Apartment (Alpinia),deluxe apartment alpinia,210044216,Deluxe Apartment,deluxe apartment,0.86
+13803141,1143356034,"Classic Condo, 1 Bedroom, Garden View (4 pax)",classic condo 1 bedroom garden view 4 pax,219612828,"Classic Apartment, 1 Bedroom, Terrace, Garden View",classic apartment 1 bedroom terrace garden view,0.87
+13822665,1143394086,Deluxe Room (AC),deluxe room ac,200906964,Deluxe Room,deluxe room,0.86
+13946058,1143631766,1 King Standard Extra Floor Space,1 king standard extra floor space,201364816,1 King Bed Standard Extra Floor Space,1 king bed standard extra floor space,0.86
+13671830,1142608330,Budget Double Room with Balcony ac,budget double room balcony ac,201186844,"Standard Double Room, Balcony",standard double room balcony,0.87
+13605775,1142872542,Room (Supreme King),room supreme king,200065978,Superior King Room,superior king room,0.87
+13442931,1142703568,"Suite, Balcony (King Suite with Garden)",suite balcony king suite garden,217832256,"Business Suite, 1 Queen Bed, Balcony, Garden View",business suite 1 queen bed balcony garden view,0.87
+13578843,1142841161,Standard Double Room ( 1 Child Until 12 years old included),standard double room 1 child until 12 years old included,321142107,Standard Double Room (1+2 children),standard double room 12 child,0.87
+13476761,1142189889,"Family Suite, Park View",family suite park view,200967934,Deluxe Family Room With Park View,deluxe family room park view,0.85
+13940672,1143631557,1 Full Bed Suite,1 full bed suite,314052734,1 Bedroom Suite,1 bedroom suite,0.87
+13465948,1141910065,"Family Cabin, 3 Bedrooms, Fireplace, Mountain View (Manzano)",family cabin 3 bedroom fireplace mountain view manzano,201502640,"Family House, 2 Bedrooms, Fireplace, Mountain View",family house 2 bedroom fireplace mountain view,0.87
+13574819,1142835725,"Junior Studio, 1 King Bed with Sofa bed, Balcony",junior studio 1 king bed sofa bed balcony,201957247,"Suite, 1 King Bed with Sofa bed, Balcony",suite 1 king bed sofa bed balcony,0.87
+13899813,1143534502,City view 3 bedroom,city view 3 bedroom,202313376,"Penthouse, 3 Bedrooms, City View",penthouse 3 bedroom city view,0.85
+13490652,1141927213,Apartment (cottage),apartment cottage,200899818,Apartment,apartment,0.85
+13656364,1142359972,"Deluxe Room, 1 King Bed, Non Smoking (Tea Art)",deluxe room 1 king bed non smoking tea art,210902723,"Deluxe Room, 1 King Bed, Non Smoking (Chic)",deluxe room 1 king bed non smoking chic,0.86
+1030222,103022206,Queen Suite with Spa Bath,queen suite spa bath,201953414,Deluxe Suite (Spa Bath),deluxe suite spa bath,0.86
+13578843,1142841416,"Penthouse, Oceanfront (Suite)",penthouse oceanfront suite,201798235,"Panoramic Penthouse, Terrace, Ocean View",panoramic penthouse terrace ocean view,0.86
+13708950,1142949809,"Apartment, 3 Bedrooms (Ref. 009)",apartment 3 bedroom ref 009,219903211,"Apartment, 3 Bedrooms (85/142)",apartment 3 bedroom 85142,0.87
+13605775,1142872605,Junior Suite (The Level King),junior suite level king,200263013,King Junior Suite,king junior suite,0.85
+13900908,1143536398,"Grand Studio, 1 Queen Bed with Sofa bed, Pool Access, Lake View",grand studio 1 queen bed sofa bed pool access lake view,314151502,"Suite, 1 King Bed with Sofa bed, Pool View",suite 1 king bed sofa bed pool view,0.87
+4333727,433372703,Single Room with Shared Shower and Toilet,single room shared shower toilet,200799329,Double or Twin Room with Shared Toilet and Private Shower,double twin room shared toilet private shower,0.87
+489362,48936218,King Room with Communications and Mobility Accessible Roll-In Shower,king room communications mobility accessible rollin shower,321305931,"Room (Mobility Accessible, Roll-In Shower)",room mobility accessible rollin shower,0.87
+13825361,1143402721,"Standard Studio, Non Smoking",standard studio non smoking,201130318,"Studio, Accessible, Non Smoking",studio accessible non smoking,0.87
+1792950,179295010,Two -Bedroom Premium Apartment - 6 Persons,two bedroom premium apartment 6 persons,200918813,"Premium Apartment, 2 Bedrooms",premium apartment 2 bedroom,0.86
+13836781,1143450645,"2 Bedroom Suite, Kitchen with Living room",2 bedroom suite kitchen living room,201255610,"Deluxe Apartment, 2 Bedrooms, Sea View (living room and kitchen for 6 adults)",deluxe apartment 2 bedroom sea view living room kitchen 6 adult,0.87
+2314673,231467310,One-Bedroom Suite,onebedroom suite,200056024,One-Bedroom Suite King,onebedroom suite king,0.86
+13947418,1143644488,Deluxe Suite (3-bedroom),deluxe suite 3bedroom,201147453,Deluxe Suite Room,deluxe suite room,0.85
+1565054,156505401,Deluxe King Studio,deluxe king studio,202176859,Deluxe Studio,deluxe studio,0.87
+13920035,1143592568,"Classic Room, Terrace",classic room terrace,213616884,"Deluxe Room, Terrace",deluxe room terrace,0.86
+64150,6415011,Large Single Room,large single room,200909856,Single Room,single room,0.87
+10398725,1039872501,Two-Bedroom Villa,twobedroom villa,200929679,C14 Two-Bedroom Pool Villa,c14 twobedroom pool villa,0.87
+13615079,1142597775,"Apartment, 1 Bedroom (Split Level)",apartment 1 bedroom split level,201273055,Split level apartment,split level apartment,0.87
+13559839,1142538241,Superior Double Room (2 + 1 Exterior),superior double room 2 1 exterior,201168838,Superior Double Room,superior double room,0.86
+13893119,1143524965,"Apartment, 2 Bedrooms (Zandstuyver 102)",apartment 2 bedroom zandstuyver 102,220813028,"Apartment, 2 Bedrooms (351/2454)",apartment 2 bedroom 3512454,0.85
+1750148,175014801,Studio with Terrace and Sea View,studio terrace sea view,202035550,"Studio, Balcony, Sea View",studio balcony sea view,0.87
+13691308,1142934388,"Economy Hollywood Twin Room, Non Smoking",economy hollywood twin room non smoking,217507247,"Economy Twin Room, Non Smoking",economy twin room non smoking,0.86
+13555766,1141973749,Economy Single Room with balcony,economy single room balcony,201899033,"Premium Single Room, Balcony",premium single room balcony,0.87
+13946587,1143636001,"Standard Double Room, Non Smoking, Garden View",standard double room non smoking garden view,200304167,"Standard Double Room, Garden View",standard double room garden view,0.86
+9413610,941361001,Tent,tent,201698940,Sunshine Tent,sunshine tent,0.86
+13691308,1142934381,"Hollywood Twin Room, Non Smoking",hollywood twin room non smoking,201041405,"Twin Room, Non Smoking",twin room non smoking,0.85
+13473003,1142186028,"Deluxe Double Room, 1 King Bed with Sofa bed (La Torre)",deluxe double room 1 king bed sofa bed la torre,230131211,"Deluxe Room, 1 King Bed with Sofa bed",deluxe room 1 king bed sofa bed,0.87
+13903429,1143540210,"Room, 3 Bedrooms, Kitchen, Ocean View",room 3 bedroom kitchen ocean view,201745908,"Suite, 1 Bedroom, Kitchen, Sea View",suite 1 bedroom kitchen sea view,0.87
+13854235,1143457616,"Villa, 3 Bedrooms, Private Pool (Free Car Rental , 8 People)",villa 3 bedroom private pool free car rental 8 person,200998233,Villa - 3 Bedrooms with Private Pool,villa 3 bedroom private pool,0.86
+410532,41053204,Single Room with Shower,single room shower,201471290,Deluxe Double Room Single Use (with shower),deluxe double room single use shower,0.87
+13940961,1143631812,City Double Room,city double room,229513447,"Double Room, City View",double room city view,0.87
+13463471,1142451252,Room (Standard Room - 2PC),room standard room 2pc,314401406,Standard Room,standard room,0.85
+491733,49173305,King Suite with Roll-In Shower - Accessible/Non-Smoking,king suite rollin shower accessiblenonsmoking,200929392,"Suite, Accessible (Roll-In Shower)",suite accessible rollin shower,0.86
+13584799,1142547977,Apartment Suite,apartment suite,201491751,Deluxe Suite Apartment,deluxe suite apartment,0.87
+13838859,1143453706,Family Chalet,family chalet,201949879,Family Chalet Ensuite,family chalet ensuite,0.85
+13937715,1143581590,"Grand House, 4 Bedrooms",grand house 4 bedroom,201788778,"House, 4 Bedrooms",house 4 bedroom,0.86
+13556014,1142799107,"Luxury Bungalow, 1 King Bed, Non Smoking, Lake View",luxury bungalow 1 king bed non smoking lake view,221734935,"Deluxe Bungalow, 1 Queen Bed, Mountain View",deluxe bungalow 1 queen bed mountain view,0.86
+13899929,1143548251,"Deluxe Studio, City View",deluxe studio city view,201365949,"Studio, City View",studio city view,0.87
+13650055,1142650467,"House, Multiple Beds, Balcony, Pool View",house multiple bed balcony pool view,202056243,"Two Bedroom Apartment, Balcony, Pool view (A4)",two bedroom apartment balcony pool view a4,0.87
+13510758,1142494039,"Standard Double Room, 2 Double Beds, Partial Ocean View, Mountainside",standard double room 2 double bed partial ocean view mountainside,200981450,"Standard Double Room, 2 Double Beds, Mountain View",standard double room 2 double bed mountain view,0.87
+4298036,429803602,Apartment (4 Adults),apartment 4 adult,201246992,Apartment (for 4 persons),apartment 4 persons,0.87
+13510758,1142494096,"Classic Quadruple Room, Mountain View, Mountainside",classic quadruple room mountain view mountainside,219604267,"Standard Double Room, Mountainside",standard double room mountainside,0.85
+7730465,773046519,Budget Double or Twin Room without Window,budget double twin room without window,201299953,"Deluxe Double or Twin Room, No Windows",deluxe double twin room no window,0.87
+6982344,698234404,Quadruple Room with Bath,quadruple room bath,201288863,"Quadruple Room, Shared Bathroom",quadruple room shared bathroom,0.86
+13919416,1143589026,Honeymoon Cottage,honeymoon cottage,321014889,Honeymoon Room,honeymoon room,0.86
+13604381,1142859946,Suite XXL with Sofa Bed - Street View,suite xxl sofa bed street view,217204844,"Deluxe Suite, 1 King Bed with Sofa bed, City View",deluxe suite 1 king bed sofa bed city view,0.86
+13559839,1142538452,Superior Double Room (Exterior),superior double room exterior,315883978,"Superior Double Room, Accessible",superior double room accessible,0.86
+13604381,1142859898,Suite XL with balcony and sofa bed - street view,suite xl balcony sofa bed street view,201310910,"Luxury Suite, 1 King Bed with Sofa bed, Balcony",luxury suite 1 king bed sofa bed balcony,0.87
+563070,56307005,Two-Bedroom Penthouse Apartment,twobedroom penthouse apartment,201145335,"Penthouse, 2 Bedrooms",penthouse 2 bedroom,0.97
+13805911,1143363767,Japanese-Western style Room (With bath) Non Smoking,japanesewestern style room bath non smoking,201180850,Japanese Style Room with Outdoor Bath,japanese style room outdoor bath,0.87
+13820694,1143391439,Panoramic Suite Pool and Garden View,panoramic suite pool garden view,220521204,"Cottage, Pool View",cottage pool view,0.86
+13446519,1142706961,"Room, 1 Double Bed, Corner",room 1 double bed corner,217827722,"Room, 1 Double Bed",room 1 double bed,0.87
+13847372,1143471058,Premium Pool Villa,premium pool villa,266428,"Villa, Private Pool",villa private pool,0.96
+13828060,1143429463,Royal Room,royal room,321123180,Royal Double Room,royal double room,0.96
+13476761,1142189969,Suite Grand with jacuzzi,suite grand jacuzzi,201129827,King Jacuzzi Tub Suite,king jacuzzi tub suite,0.86
+13551935,1141995742,"Standard Double or Twin Room, Lanai, Sea View",standard double twin room lanai sea view,200916988,"Standard Double or Twin Room, Sea View",standard double twin room sea view,0.97
+13559714,1142269702,Panorama Twin Room,panorama twin room,213624997,"Premium Room, 2 Twin Beds (Panorama)",premium room 2 twin bed panorama,0.86
+13600522,1142334682,"Japanese Style Room 18sqm,  Shared Bathroom, Non Smoking",japanese style room 18sqm shared bathroom non smoking,201048856,"Economy Japanese-Style Single Room with Shared Bathroom, Smoking",economy japanesestyle single room shared bathroom smoking,0.87
+13822113,1143391075,Comfort Cabin,comfort cabin,201488097,Comfort Apartment,comfort apartment,0.86
+406621,40662105,Deluxe One-Bedroom Apartment with Sea View,deluxe onebedroom apartment sea view,201396287,Deluxe Apartment (No Sea View),deluxe apartment no sea view,0.86
+22544,2254412,Twin/Double Room,twindouble room,201693761,Delicate Twin Room,delicate twin room,0.86
+10134524,1013452401,One-Bedroom Villa,onebedroom villa,200058101,One-Bedroom Pool Villa,onebedroom pool villa,0.87
+13578843,1142841579,"Junior Suite, Corner (Single Use)",junior suite corner single use,217817456,Junior Suite (Single Use),junior suite single use,0.86
+3129786,312978601,Economy Japanese-Style Triple Room with Shared Bathroom,economy japanesestyle triple room shared bathroom,201013156,"Budget Triple Room, Shared Bathroom",budget triple room shared bathroom,0.85
+172243,17224306,Double Room with Two Double Beds - Disability Access Hearing Accessible - Accessible Tub,double room two double bed disability access hearing accessible accessible tub,200259517,"Suite, 2 Double Beds, Accessible, Bathtub (Mobility & Hearing)",suite 2 double bed accessible bathtub mobility hearing,0.85
+8311135,831113510,Cozy Deluxe Twin,cozy deluxe twin,217852964,DELUXE TWIN,deluxe twin,0.85
+13519673,1142234235,Premier Studio Suite,premier studio suite,315435067,Studio Suite,studio suite,0.86
+1080702,108070222,Two-Bedroom Deluxe Villa,twobedroom deluxe villa,201143245,"Deluxe Villa, 2 Bedrooms",deluxe villa 2 bedroom,0.85
+8339578,833957804,Cottage with Garden View,cottage garden view,202036016,"Bungalow, Garden View",bungalow garden view,0.87
+1792950,179295004,Three Bedroom Apartment - 8 Persons,three bedroom apartment 8 persons,286705,Three Bedroom Apartment,three bedroom apartment,0.87
+13527434,1142804960,"Deluxe Room, Annex Building",deluxe room annex building,201002044,"Standard Room, Annex Building",standard room annex building,0.87
+13923020,1143598387,"Superior Villa, 3 Bedrooms, Non Smoking, Kitchen",superior villa 3 bedroom non smoking kitchen,202093830,"Exclusive Apartment, 6 Bedrooms, Non Smoking, Kitchen",exclusive apartment 6 bedroom non smoking kitchen,0.86
+13896861,1143647681,Superior Family Suite,superior family suite,321206330,Family Suite,family suite,0.86
+13682247,1142926155,"Room, 1 Queen Bed, Microwave",room 1 queen bed microwave,230441386,"Deluxe Room, 2 Queen Beds, Non Smoking, Microwave",deluxe room 2 queen bed non smoking microwave,0.87
+13566551,1142276771,Suite (Attic),suite attic,214528354,Single Room (Attic),single room attic,0.86
+796417,79641706,Double Room with Mountain View (Atardeceres),double room mountain view atardeceres,211508298,"Double Room, Mountain View",double room mountain view,0.86
+1080702,108070226,Two-Bedroom Budget Cabin,twobedroom budget cabin,315977558,Two-bedroom apartment Standard,twobedroom apartment standard,0.86
+13445925,1141889966,"Standard Studio, Kitchen (Spacious Studio Unit)",standard studio kitchen spacious studio unit,201152748,"Studio Suite, Kitchen",studio suite kitchen,0.97
+13820694,1143394305,"Deluxe Room, Hill View",deluxe room hill view,217856728,"Deluxe Apartment, Mountain View",deluxe apartment mountain view,0.86
+8198944,819894403,Grand Deluxe King Room with City View,grand deluxe king room city view,200866659,Luxury City View King Room,luxury city view king room,0.97
+6798699,679869914,Double Room with Spa Bath,double room spa bath,200096564,"Apartment, 2 Bedrooms, Spa Bath",apartment 2 bedroom spa bath,0.87
+13807066,1143366745,"Triple Room, Ensuite",triple room ensuite,202128009,"Double Room, Ensuite (Plus One)",double room ensuite plus one,0.87
+13947418,1143644566,Family Villa (3-bedroom),family villa 3bedroom,200929694,C22 Family Three-Bedroom Pool Villa,c22 family threebedroom pool villa,0.86
+13606976,1142862644,"Senior Double Room, City View",senior double room city view,201414554,"Classic Double Room, City View",classic double room city view,0.87
+2467190,246719001,Three-Bedroom Villa,threebedroom villa,218767473,Three Bedroom Villa,three bedroom villa,0.97

@@ -1,0 +1,68 @@
+import unittest
+import json
+from app import app
+import pandas as pd
+import numpy as np
+from unittest.mock import patch, MagicMock
+
+class TestAPI(unittest.TestCase):
+    
+    def setUp(self):
+        self.app = app.test_client()
+        self.app.testing = True
+    
+    def test_index_route(self):
+        # 测试首页路由
+        response = self.app.get('/')
+        self.assertEqual(response.status_code, 200)
+    
+    @patch('app.enhanced_room_matching')
+    @patch('app.preprocess_room_names')
+    def test_match_rooms_api(self, mock_preprocess, mock_match):
+        # 模拟预处理函数
+        mock_preprocess.side_effect = [
+            (["superior mountain view"], {"room_type": ["superior"], "has_view": [True]}),
+            (["king deluxe balcony"], {"room_type": ["deluxe"], "has_balcony": [True]})
+        ]
+        
+        # 模拟匹配函数
+        mock_match.return_value = pd.DataFrame({
+            'reference_hotel_id': ['hotel123'],
+            'reference_room_id': ['ref001'],
+            'reference_room_name': ['Superior Room, Mountain View'],
+            'reference_processed_name': ['superior mountain view'],
+            'supplier_room_id': ['sup001'],
+            'supplier_room_name': ['Superior Mountain View'],
+            'supplier_processed_name': ['superior mountain view'],
+            'text_similarity': [0.85]
+        })
+        
+        # 发送测试请求
+        payload = {
+            "referenceCatalog": {
+                "propertyId": "hotel123",
+                "rooms": [
+                    {"roomId": "ref001", "roomName": "Superior Room, Mountain View"}
+                ]
+            },
+            "inputCatalog": {
+                "rooms": [
+                    {"roomId": "sup001", "roomName": "Superior Mountain View"}
+                ]
+            }
+        }
+        
+        response = self.app.post('/api/match-rooms', 
+                                json=payload,
+                                content_type='application/json')
+        
+        # 验证响应
+        self.assertEqual(response.status_code, 200)
+        data = json.loads(response.data)
+        self.assertEqual(data['propertyId'], 'hotel123')
+        self.assertEqual(len(data['matches']), 1)
+        self.assertEqual(data['matches'][0]['referenceRoomId'], 'ref001')
+        self.assertEqual(data['matches'][0]['supplierRoomId'], 'sup001')
+
+if __name__ == '__main__':
+    unittest.main() 
