@@ -1,25 +1,64 @@
-from flask import Flask, request, jsonify
+from fastapi import FastAPI, Request, HTTPException
+from fastapi.responses import HTMLResponse, JSONResponse
+from pydantic import BaseModel, Field
+from typing import List, Dict, Optional, Any, Union
 import pandas as pd
 from sentence_transformers import SentenceTransformer
 from models.bert_xgb import BertXGBoostRoomMatcher
 import os
 from data_processing.data_processing import preprocess_room_names, enhanced_room_matching
+import uvicorn
+import traceback
 
-app = Flask(__name__)
+# Define Pydantic models for request validation
+class Room(BaseModel):
+    roomId: str
+    roomName: str
+
+class SupplierRoom(BaseModel):
+    roomId: str
+    roomName: str
+
+class ReferenceCatalog(BaseModel):
+    propertyId: str
+    rooms: List[Room]
+
+class InputCatalog(BaseModel):
+    rooms: List[SupplierRoom]
+
+class MatchRoomsRequest(BaseModel):
+    referenceCatalog: ReferenceCatalog
+    inputCatalog: InputCatalog
+    similarityThreshold: Optional[float] = 0.8
+    featureWeight: Optional[float] = 0.3
+
+class MatchResult(BaseModel):
+    referenceRoomId: str
+    referenceRoomName: str
+    supplierRoomId: str
+    supplierRoomName: str
+    similarityScore: float
+
+class MatchResponse(BaseModel):
+    propertyId: str
+    matches: List[MatchResult]
+
+app = FastAPI(title="Room Matching API", 
+              description="API for matching rooms between reference and supplier catalogs")
 
 # Load the pre-trained model
 model_path = "trained_model/fine_tuned_model.joblib"  # Update with your model path
 model = BertXGBoostRoomMatcher(bert_model_name='sentence-transformers/all-MiniLM-L6-v2',model_path=model_path, batch_size=32) 
 
-# 添加错误处理
+# Add error handling
 try:
     model.load_model()
     print("Model loaded successfully")
 except Exception as e:
     print(f"Error loading model: {str(e)}")
-    # 提供一个备用方案或友好的错误消息
+    # Provide a fallback or friendly error message
 
-@app.route('/', methods=['GET'])
+@app.get("/", response_class=HTMLResponse)
 def index():
     return """
     <!DOCTYPE html>
@@ -67,25 +106,16 @@ def index():
     </html>
     """
 
-@app.route('/api/match-rooms', methods=['POST'])
-def match_rooms():
+@app.post("/api/match-rooms", response_model=MatchResponse)
+async def match_rooms(request: MatchRoomsRequest):
     try:
-        data = request.get_json()
-        
         # Extract data from request
-        reference_catalog = data.get('referenceCatalog', {})
-        input_catalog = data.get('inputCatalog', {})
+        reference_catalog = request.referenceCatalog
+        input_catalog = request.inputCatalog
         
-        # Validate input
-        if not reference_catalog or not input_catalog:
-            return jsonify({"error": "Missing required data"}), 400
-            
-        hotel_id = reference_catalog.get('propertyId')
-        reference_rooms_data = reference_catalog.get('rooms', [])
-        supplier_rooms_data = input_catalog.get('rooms', [])
-        
-        if not hotel_id or not reference_rooms_data or not supplier_rooms_data:
-            return jsonify({"error": "Missing required fields"}), 400
+        hotel_id = reference_catalog.propertyId
+        reference_rooms_data = [{"roomId": room.roomId, "roomName": room.roomName} for room in reference_catalog.rooms]
+        supplier_rooms_data = [{"roomId": room.roomId, "roomName": room.roomName} for room in input_catalog.rooms]
         
         # Convert to DataFrames
         reference_rooms = pd.DataFrame(reference_rooms_data)
@@ -111,8 +141,8 @@ def match_rooms():
             supplier_rooms[feature_name] = feature_values
         
         # Perform room matching
-        similarity_threshold = data.get('similarityThreshold', 0.8)
-        feature_weight = data.get('featureWeight', 0.3)
+        similarity_threshold = request.similarityThreshold
+        feature_weight = request.featureWeight
         
         matches = enhanced_room_matching(
             reference_rooms, 
@@ -125,24 +155,23 @@ def match_rooms():
         # Format the response
         results = []
         for _, match in matches.iterrows():
-            results.append({
-                'referenceRoomId': match['reference_room_id'],
-                'referenceRoomName': match['reference_room_name'],
-                'supplierRoomId': match['supplier_room_id'],
-                'supplierRoomName': match['supplier_room_name'],
-                'similarityScore': float(match['text_similarity']),
-            })
+            results.append(MatchResult(
+                referenceRoomId=match['reference_room_id'],
+                referenceRoomName=match['reference_room_name'],
+                supplierRoomId=match['supplier_room_id'],
+                supplierRoomName=match['supplier_room_name'],
+                similarityScore=float(match['text_similarity']),
+            ))
         
-        return jsonify({
-            'propertyId': hotel_id,
-            'matches': results
-        })
+        return MatchResponse(
+            propertyId=hotel_id,
+            matches=results
+        )
         
     except Exception as e:
-        import traceback
         print(f"Error: {str(e)}")
-        print(traceback.format_exc())  # 打印完整的堆栈跟踪
-        return jsonify({"error": str(e)}), 500
+        print(traceback.format_exc())  # Print full stack trace
+        raise HTTPException(status_code=500, detail=str(e))
 
 if __name__ == '__main__':
-    app.run(debug=True) 
+    uvicorn.run("app:app", host="0.0.0.0", port=8000, reload=True) 

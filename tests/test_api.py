@@ -10,6 +10,7 @@ from app import app
 import pandas as pd
 import numpy as np
 from unittest.mock import patch, MagicMock
+from fastapi.testclient import TestClient
 
 class TestAPI(unittest.TestCase):
     
@@ -69,6 +70,34 @@ class TestAPI(unittest.TestCase):
         self.assertEqual(len(data['matches']), 1)
         self.assertEqual(data['matches'][0]['referenceRoomId'], 'ref001')
         self.assertEqual(data['matches'][0]['supplierRoomId'], 'sup001')
+
+client = TestClient(app)
+
+def test_read_main():
+    response = client.get("/")
+    assert response.status_code == 200
+
+def test_match_rooms():
+    test_data = {
+        "referenceCatalog": {
+            "propertyId": "hotel123",
+            "rooms": [
+                {"roomId": "ref001", "roomName": "Superior Room, Mountain View"}
+            ]
+        },
+        "inputCatalog": {
+            "rooms": [
+                {"roomId": "sup001", "roomName": "Superior Mountain View"}
+            ]
+        },
+        "similarityThreshold": 0.6,
+        "featureWeight": 0.3
+    }
+    
+    # 这里可能需要模拟模型的行为，取决于你的应用架构
+    response = client.post("/api/match-rooms", json=test_data)
+    assert response.status_code == 200
+    # 添加更多断言来验证响应内容
 
 if __name__ == '__main__':
     unittest.main() 

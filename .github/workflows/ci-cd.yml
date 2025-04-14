@@ -1,80 +1,82 @@
-name: CI/CD Pipeline
+name: Hotel Mapping API CI/CD
 
 on:
   push:
     branches: [ main, master ]
   pull_request:
     branches: [ main, master ]
+  workflow_dispatch:  # 允许手动触发
 
 jobs:
   test:
     runs-on: ubuntu-latest
     
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3
     
     - name: Set up Python
-      uses: actions/setup-python@v2
+      uses: actions/setup-python@v4
       with:
         python-version: '3.9'
-    
+        
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
-    
-    - name: Prepare test environment
-      run: |
+        pip install -r requirements.txt
+        pip install pytest pytest-cov
         
+    - name: Create directories
+      run: |
         mkdir -p trained_model
-        touch trained_model/.gitkeep
-        # create __init__.py 文件
-        touch __init__.py
-        touch data_processing/__init__.py
-        touch models/__init__.py
-        touch tests/__init__.py
-        # create conftest.py
-        echo 'import sys, os; sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))' > tests/conftest.py
-    
+        mkdir -p models
+        
     - name: Run tests
       run: |
-        # set PYTHONPATH
-        export PYTHONPATH=$PYTHONPATH:$(pwd)
-        # run unitest
-        python -m pytest tests/ -v
-  
-  build-and-push:
+        pytest --cov=hotel_mapping tests/ --cov-report=xml
+      
+    - name: Upload coverage report
+      uses: codecov/codecov-action@v3
+      with:
+        file: ./coverage.xml
+        fail_ci_if_error: false
+
+  build:
     needs: test
     runs-on: ubuntu-latest
-    if: github.event_name == 'push' && (github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master')
     
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3
     
     - name: Set up Docker Buildx
-      uses: docker/setup-buildx-action@v1
-    
+      uses: docker/setup-buildx-action@v2
+      
     - name: Login to DockerHub
-      uses: docker/login-action@v1
+      if: github.event_name != 'pull_request'
+      uses: docker/login-action@v2
       with:
         username: ${{ secrets.DOCKERHUB_USERNAME }}
         password: ${{ secrets.DOCKERHUB_TOKEN }}
-    
-    - name: Build and push
-      uses: docker/build-push-action@v2
+        
+    - name: Build and push Docker image
+      uses: docker/build-push-action@v4
       with:
         context: .
-        push: true
-        tags: ${{ secrets.DOCKERHUB_USERNAME }}/room-matching-api:latest
-    
+        push: ${{ github.event_name != 'pull_request' }}
+        tags: ${{ secrets.DOCKERHUB_USERNAME }}/hotel-mapping-api:latest
+        cache-from: type=gha
+        cache-to: type=gha,mode=max
+
   deploy:
-    needs: build-and-push
+    needs: build
+    if: github.event_name != 'pull_request'
     runs-on: ubuntu-latest
-    if: github.event_name == 'push' && (github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master')
     
     steps:
     - name: Deploy to production
+      # 这里可以添加部署到你的服务器或云平台的步骤
+      # 例如使用 SSH 连接到服务器并拉取最新的 Docker 镜像
       run: |
-        echo "Deploying to production server..."
-        # 这里添加您的部署脚本，例如 SSH 到服务器并拉取最新镜像
-        # 或者使用 Kubernetes、AWS ECS 等部署服务 
+        echo "Deploying to production..."
+        # 实际部署命令取决于你的部署环境
+        # 例如：
+        # ssh ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} "cd /path/to/app && docker-compose pull && docker-compose up -d" 
