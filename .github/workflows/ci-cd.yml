@@ -1,64 +1,122 @@
-name: CI/CD Pipeline
+name: Hotel Mapping API CI/CD
 
 on:
   push:
     branches: [ main, master ]
   pull_request:
     branches: [ main, master ]
+  workflow_dispatch:  # Allow manual triggering
 
 jobs:
   test:
     runs-on: ubuntu-latest
     
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3
     
     - name: Set up Python
-      uses: actions/setup-python@v2
+      uses: actions/setup-python@v4
       with:
         python-version: '3.9'
-    
+        
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
-    
-    - name: Run tests
+        # Install specific version of huggingface_hub to resolve compatibility issues
+        pip install huggingface_hub==0.12.0
+        # Install other dependencies
+        pip install matplotlib
+        pip install httpx  # Required for FastAPI TestClient
+        pip install -r requirements.txt
+        pip install pytest pytest-cov pytest-mock
+        # Install current package to resolve import issues
+        pip install -e .
+        
+    - name: Create directories
       run: |
-        pytest tests/ -v
-  
-  build-and-push:
+        mkdir -p trained_model
+        mkdir -p models
+        
+    - name: Run unit tests
+      run: |
+        # Run tests with standard pytest command
+        python -m pytest tests/ -v
+        
+    - name: Run coverage tests
+      run: |
+        # Run coverage tests
+        pytest --cov=hotel_mapping tests/ --cov-report=xml
+      
+    - name: Upload coverage report
+      uses: codecov/codecov-action@v3
+      with:
+        file: ./coverage.xml
+        fail_ci_if_error: false
+
+  build:
     needs: test
     runs-on: ubuntu-latest
-    if: github.event_name == 'push' && (github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master')
     
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3
     
     - name: Set up Docker Buildx
-      uses: docker/setup-buildx-action@v1
-    
+      uses: docker/setup-buildx-action@v2
+      
     - name: Login to DockerHub
-      uses: docker/login-action@v1
+      if: github.event_name != 'pull_request'
+      uses: docker/login-action@v2
       with:
         username: ${{ secrets.DOCKERHUB_USERNAME }}
         password: ${{ secrets.DOCKERHUB_TOKEN }}
+        
+    - name: Build and push Docker image
+      uses: docker/build-push-action@v4
+      with:
+        context: .
+        push: ${{ github.event_name != 'pull_request' }}
+        tags: ${{ secrets.DOCKERHUB_USERNAME }}/hotel-mapping-api:latest
+        cache-from: type=gha
+        cache-to: type=gha,mode=max
+
+  deploy-to-gcp:
+    needs: build
+    if: github.event_name != 'pull_request'
+    runs-on: ubuntu-latest
     
-    - name: Build and push
-      uses: docker/build-push-action@v2
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Set up Google Cloud SDK
+      uses: google-github-actions/setup-gcloud@v1
+      with:
+        project_id: ${{ secrets.GCP_PROJECT_ID }}
+        service_account_key: ${{ secrets.GCP_SA_KEY }}
+        export_default_credentials: true
+    
+    - name: Configure Docker for GCP Artifact Registry
+      run: |
+        gcloud auth configure-docker ${{ secrets.GCP_REGION }}-docker.pkg.dev
+    
+    - name: Build and push Docker image to GCP
+      uses: docker/build-push-action@v4
       with:
         context: .
         push: true
-        tags: ${{ secrets.DOCKERHUB_USERNAME }}/room-matching-api:latest
+        tags: ${{ secrets.GCP_REGION }}-docker.pkg.dev/${{ secrets.GCP_PROJECT_ID }}/hotel-mapping/api:latest
     
-  deploy:
-    needs: build-and-push
-    runs-on: ubuntu-latest
-    if: github.event_name == 'push' && (github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master')
-    
-    steps:
-    - name: Deploy to production
+    - name: Deploy to Cloud Run
       run: |
-        echo "Deploying to production server..."
-        # 这里添加您的部署脚本，例如 SSH 到服务器并拉取最新镜像
-        # 或者使用 Kubernetes、AWS ECS 等部署服务 
+        gcloud run deploy hotel-mapping-api \
+          --image ${{ secrets.GCP_REGION }}-docker.pkg.dev/${{ secrets.GCP_PROJECT_ID }}/hotel-mapping/api:latest \
+          --platform managed \
+          --region ${{ secrets.GCP_REGION }} \
+          --allow-unauthenticated \
+          --memory 2Gi \
+          --cpu 1 \
+          --min-instances 0 \
+          --max-instances 10
+    
+    - name: Output service URL
+      run: |
+        echo "Service URL: $(gcloud run services describe hotel-mapping-api --region ${{ secrets.GCP_REGION }} --format 'value(status.url)')" 

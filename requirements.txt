@@ -6,4 +6,6 @@ sentence-transformers==2.2.2
 xgboost==1.5.0
 joblib==1.1.0
 gunicorn==20.1.0
-pytest==6.2.5 
+pytest==6.2.5
+fastapi>=0.68.0
+uvicorn>=0.15.0 

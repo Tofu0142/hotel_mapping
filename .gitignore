@@ -42,6 +42,7 @@ logs/
 trained_model/*.joblib
 trained_model/*.pkl
 embeddings_cache/*.npy
+data_source/raw_data/*.csv
 *.png
 
 
@@ -49,3 +50,5 @@ embeddings_cache/*.npy
 .pytest_cache/
 .coverage
 htmlcov/
+
+*.json
