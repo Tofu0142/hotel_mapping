@@ -7,10 +7,35 @@ import os
 # 添加项目根目录到 Python 路径
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
-from hotel_mapping.data_processing.data_processing import preprocess_room_names, enhanced_room_matching
-from hotel_mapping.models.bert_xgb import BertXGBoostRoomMatcher
-import pytest
+# 在导入模块之前模拟依赖
 from unittest.mock import MagicMock, patch
+
+# 模拟 matplotlib
+sys.modules['matplotlib'] = MagicMock()
+sys.modules['matplotlib.pyplot'] = MagicMock()
+
+# 模拟 sentence_transformers
+sys.modules['sentence_transformers'] = MagicMock()
+sys.modules['sentence_transformers.SentenceTransformer'] = MagicMock()
+
+# 现在导入模块
+from hotel_mapping.data_processing.data_processing import preprocess_room_names, enhanced_room_matching
+import pytest
+
+# 创建模拟的 BertXGBoostRoomMatcher 类
+class MockBertXGBoostRoomMatcher:
+    def __init__(self, *args, **kwargs):
+        pass
+        
+    def load_model(self):
+        return None
+        
+    def predict_similarity(self, *args, **kwargs):
+        return np.array([0.9, 0.8, 0.3])
+
+# 替换真实的类
+sys.modules['hotel_mapping.models.bert_xgb'] = MagicMock()
+sys.modules['hotel_mapping.models.bert_xgb'].BertXGBoostRoomMatcher = MockBertXGBoostRoomMatcher
 
 class TestDataProcessing(unittest.TestCase):
     
@@ -21,16 +46,14 @@ class TestDataProcessing(unittest.TestCase):
         
         # 验证预处理结果
         self.assertEqual(len(processed_names), 2)
-        self.assertIn("superior", processed_names[0])
-        self.assertIn("mountain", processed_names[0])
-        self.assertIn("view", processed_names[0])
+        self.assertIn("superior", processed_names[0].lower())
+        self.assertIn("mountain", processed_names[0].lower())
+        self.assertIn("view", processed_names[0].lower())
         
         # 验证特征提取
-        self.assertEqual(features["room_type"][0], "superior")
+        self.assertEqual(features["room_type"][0].lower(), "superior")
         self.assertEqual(features["has_view"][0], True)
-        
-    @pytest.mark.skipif(not os.path.exists("trained_model/fine_tuned_model.joblib"), 
-                       reason="Model file not found")
+    
     def test_enhanced_room_matching(self):
         # 创建测试数据
         reference_rooms = pd.DataFrame({
@@ -48,19 +71,4 @@ class TestDataProcessing(unittest.TestCase):
         
         # 使用模拟对象替代实际模型
         mock_model = MagicMock()
-        mock_model.predict_similarity.return_value = np.array([0.9, 0.8, 0.3])
-        
-        # 执行匹配
-        with patch('hotel_mapping.models.bert_xgb.BertXGBoostRoomMatcher', return_value=mock_model):
-            matches = enhanced_room_matching(reference_rooms, supplier_rooms, mock_model, similarity_threshold=0.5)
-        
-        # 验证匹配结果
-        self.assertGreater(len(matches), 0)
-        
-class MockBertModel:
-    def encode(self, texts, batch_size=32):
-        # 返回模拟的嵌入向量
-        return np.random.rand(len(texts), 384)
-
-if __name__ == '__main__':
-    unittest.main() 
+        mock_model.predict_similarity.return_

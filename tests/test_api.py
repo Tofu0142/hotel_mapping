@@ -6,11 +6,28 @@ import os
 # 添加项目根目录到 Python 路径
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
+# 在导入 app 之前模拟依赖
+import pytest
+from unittest.mock import patch, MagicMock
+
+# 模拟 SentenceTransformer
+sys.modules['sentence_transformers'] = MagicMock()
+sys.modules['sentence_transformers.SentenceTransformer'] = MagicMock()
+
+
+mock_model = MagicMock()
+mock_model.load_model.return_value = None
+mock_model.predict_similarity.return_value = [0.9]
+
+
 from hotel_mapping.app import app
+
 import pandas as pd
 import numpy as np
-from unittest.mock import patch, MagicMock
 from fastapi.testclient import TestClient
+
+
+app.model = mock_model
 
 class TestAPI(unittest.TestCase):
     
