@@ -3,30 +3,39 @@ import json
 import sys
 import os
 
-# 添加项目根目录到 Python 路径
+# Add project root directory to Python path
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
-# 在导入 app 之前模拟依赖
+# Mock dependencies before importing app
 import pytest
 from unittest.mock import patch, MagicMock
 
-# 模拟 SentenceTransformer
+# Mock SentenceTransformer
 sys.modules['sentence_transformers'] = MagicMock()
 sys.modules['sentence_transformers.SentenceTransformer'] = MagicMock()
 
-
+# Mock hotel_mapping.models.bert_xgb
+sys.modules['hotel_mapping.models.bert_xgb'] = MagicMock()
+mock_model_class = MagicMock()
 mock_model = MagicMock()
 mock_model.load_model.return_value = None
 mock_model.predict_similarity.return_value = [0.9]
+mock_model_class.return_value = mock_model
+sys.modules['hotel_mapping.models.bert_xgb'].BertXGBoostRoomMatcher = mock_model_class
 
+# Mock hotel_mapping.data_processing.data_processing
+sys.modules['hotel_mapping.data_processing.data_processing'] = MagicMock()
+sys.modules['hotel_mapping.data_processing.data_processing'].preprocess_room_names = MagicMock()
+sys.modules['hotel_mapping.data_processing.data_processing'].enhanced_room_matching = MagicMock()
 
+# Now import app
 from hotel_mapping.app import app
 
 import pandas as pd
 import numpy as np
 from fastapi.testclient import TestClient
 
-
+# Replace app's model
 app.model = mock_model
 
 class TestAPI(unittest.TestCase):
@@ -35,20 +44,20 @@ class TestAPI(unittest.TestCase):
         self.client = TestClient(app)
     
     def test_index_route(self):
-        # 测试首页路由
+        # Test home route
         response = self.client.get('/')
         self.assertEqual(response.status_code, 200)
     
     @patch('hotel_mapping.app.enhanced_room_matching')
     @patch('hotel_mapping.app.preprocess_room_names')
     def test_match_rooms_api(self, mock_preprocess, mock_match):
-        # 模拟预处理函数
+        # Mock preprocessing function
         mock_preprocess.side_effect = [
             (["superior mountain view"], {"room_type": ["superior"], "has_view": [True]}),
             (["king deluxe balcony"], {"room_type": ["deluxe"], "has_balcony": [True]})
         ]
         
-        # 模拟匹配函数
+        # Mock matching function
         mock_match.return_value = pd.DataFrame({
             'reference_hotel_id': ['hotel123'],
             'reference_room_id': ['ref001'],
@@ -60,7 +69,7 @@ class TestAPI(unittest.TestCase):
             'text_similarity': [0.85]
         })
         
-        # 发送测试请求
+        # Send test request
         payload = {
             "referenceCatalog": {
                 "propertyId": "hotel123",
@@ -78,7 +87,7 @@ class TestAPI(unittest.TestCase):
         response = self.client.post('/api/match-rooms', 
                                 json=payload)
         
-        # 验证响应
+        # Verify response
         self.assertEqual(response.status_code, 200)
         data = response.json()
         self.assertEqual(data['propertyId'], 'hotel123')
@@ -109,7 +118,7 @@ def test_match_rooms():
         "featureWeight": 0.3
     }
     
-    # 这里可能需要模拟模型的行为，取决于你的应用架构
+    # Mock the model behavior
     with patch('hotel_mapping.app.enhanced_room_matching') as mock_match:
         mock_match.return_value = pd.DataFrame({
             'reference_room_id': ['ref001'],
@@ -120,7 +129,7 @@ def test_match_rooms():
         })
         response = client.post("/api/match-rooms", json=test_data)
         assert response.status_code == 200
-        # 添加更多断言来验证响应内容
+        # Add more assertions to verify response content
 
 if __name__ == '__main__':
     unittest.main() 

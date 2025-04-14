@@ -4,9 +4,9 @@ from pydantic import BaseModel, Field
 from typing import List, Dict, Optional, Any, Union
 import pandas as pd
 from sentence_transformers import SentenceTransformer
-from models.bert_xgb import BertXGBoostRoomMatcher
+from hotel_mapping.models.bert_xgb import BertXGBoostRoomMatcher
 import os
-from data_processing.data_processing import preprocess_room_names, enhanced_room_matching
+from hotel_mapping.data_processing.data_processing import preprocess_room_names, enhanced_room_matching
 import uvicorn
 import traceback
 
