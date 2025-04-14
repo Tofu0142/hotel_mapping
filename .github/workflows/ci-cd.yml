@@ -23,12 +23,25 @@ jobs:
         python -m pip install --upgrade pip
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
     
+    - name: Prepare test environment
+      run: |
+        
+        mkdir -p trained_model
+        touch trained_model/.gitkeep
+        # create __init__.py 文件
+        touch __init__.py
+        touch data_processing/__init__.py
+        touch models/__init__.py
+        touch tests/__init__.py
+        # create conftest.py
+        echo 'import sys, os; sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))' > tests/conftest.py
+    
     - name: Run tests
       run: |
-        # install package
-        pip install -e .
-        # unitest
-        pytest tests/ -v
+        # set PYTHONPATH
+        export PYTHONPATH=$PYTHONPATH:$(pwd)
+        # run unitest
+        python -m pytest tests/ -v
   
   build-and-push:
     needs: test
