@@ -79,14 +79,44 @@ jobs:
         cache-from: type=gha
         cache-to: type=gha,mode=max
 
-  deploy:
+  deploy-to-gcp:
     needs: build
     if: github.event_name != 'pull_request'
     runs-on: ubuntu-latest
     
     steps:
-    - name: Deploy to production
+    - uses: actions/checkout@v3
+    
+    - name: Set up Google Cloud SDK
+      uses: google-github-actions/setup-gcloud@v1
+      with:
+        project_id: ${{ secrets.GCP_PROJECT_ID }}
+        service_account_key: ${{ secrets.GCP_SA_KEY }}
+        export_default_credentials: true
+    
+    - name: Configure Docker for GCP Artifact Registry
       run: |
-        echo "Deploying to production..."
-        
-        # ssh ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} "cd /path/to/app && docker-compose pull && docker-compose up -d" 
+        gcloud auth configure-docker ${{ secrets.GCP_REGION }}-docker.pkg.dev
+    
+    - name: Build and push Docker image to GCP
+      uses: docker/build-push-action@v4
+      with:
+        context: .
+        push: true
+        tags: ${{ secrets.GCP_REGION }}-docker.pkg.dev/${{ secrets.GCP_PROJECT_ID }}/hotel-mapping/api:latest
+    
+    - name: Deploy to Cloud Run
+      run: |
+        gcloud run deploy hotel-mapping-api \
+          --image ${{ secrets.GCP_REGION }}-docker.pkg.dev/${{ secrets.GCP_PROJECT_ID }}/hotel-mapping/api:latest \
+          --platform managed \
+          --region ${{ secrets.GCP_REGION }} \
+          --allow-unauthenticated \
+          --memory 2Gi \
+          --cpu 1 \
+          --min-instances 0 \
+          --max-instances 10
+    
+    - name: Output service URL
+      run: |
+        echo "Service URL: $(gcloud run services describe hotel-mapping-api --region ${{ secrets.GCP_REGION }} --format 'value(status.url)')" 

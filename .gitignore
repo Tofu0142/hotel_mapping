@@ -50,3 +50,5 @@ data_source/raw_data/*.csv
 .pytest_cache/
 .coverage
 htmlcov/
+
+*.json
