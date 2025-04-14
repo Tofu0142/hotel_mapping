@@ -5,7 +5,7 @@ on:
     branches: [ main, master ]
   pull_request:
     branches: [ main, master ]
-  workflow_dispatch:  # 允许手动触发
+  workflow_dispatch:  
 
 jobs:
   test:
@@ -24,7 +24,7 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r requirements.txt
         pip install pytest pytest-cov pytest-mock
-        # 安装当前包以解决导入问题
+        
         pip install -e .
         
     - name: Create directories
@@ -34,12 +34,12 @@ jobs:
         
     - name: Run unit tests
       run: |
-        # 运行单元测试
+        
         pytest tests/ -v
         
     - name: Run coverage tests
       run: |
-        # 运行覆盖率测试
+       
         pytest --cov=hotel_mapping tests/ --cov-report=xml
       
     - name: Upload coverage report
@@ -81,10 +81,8 @@ jobs:
     
     steps:
     - name: Deploy to production
-      # 这里可以添加部署到你的服务器或云平台的步骤
-      # 例如使用 SSH 连接到服务器并拉取最新的 Docker 镜像
+      
       run: |
         echo "Deploying to production..."
-        # 实际部署命令取决于你的部署环境
-        # 例如：
+        
         # ssh ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} "cd /path/to/app && docker-compose pull && docker-compose up -d" 
