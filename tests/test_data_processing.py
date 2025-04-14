@@ -7,9 +7,10 @@ import os
 # 添加项目根目录到 Python 路径
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
-from data_processing.data_processing import preprocess_room_names, enhanced_room_matching
-from models.bert_xgb import BertXGBoostRoomMatcher
+from hotel_mapping.data_processing.data_processing import preprocess_room_names, enhanced_room_matching
+from hotel_mapping.models.bert_xgb import BertXGBoostRoomMatcher
 import pytest
+from unittest.mock import MagicMock, patch
 
 class TestDataProcessing(unittest.TestCase):
     
@@ -45,18 +46,13 @@ class TestDataProcessing(unittest.TestCase):
             'processed_name': ['superior mountain view', 'king deluxe balcony', 'standard double room']
         })
         
-        # 初始化模型
-        model = BertXGBoostRoomMatcher(
-            bert_model_name='sentence-transformers/all-MiniLM-L6-v2',
-            model_path="trained_model/fine_tuned_model.joblib", 
-            batch_size=32
-        )
-        
-        # 模拟模型行为，避免实际加载模型
-        model.bert_model = MockBertModel()
+        # 使用模拟对象替代实际模型
+        mock_model = MagicMock()
+        mock_model.predict_similarity.return_value = np.array([0.9, 0.8, 0.3])
         
         # 执行匹配
-        matches = enhanced_room_matching(reference_rooms, supplier_rooms, model, similarity_threshold=0.5)
+        with patch('hotel_mapping.models.bert_xgb.BertXGBoostRoomMatcher', return_value=mock_model):
+            matches = enhanced_room_matching(reference_rooms, supplier_rooms, mock_model, similarity_threshold=0.5)
         
         # 验证匹配结果
         self.assertGreater(len(matches), 0)
