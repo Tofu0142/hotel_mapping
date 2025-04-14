@@ -1,9 +1,14 @@
 import unittest
 import pandas as pd
 import numpy as np
+import sys
+import os
+
+# 添加项目根目录到 Python 路径
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+
 from data_processing.data_processing import preprocess_room_names, enhanced_room_matching
 from models.bert_xgb import BertXGBoostRoomMatcher
-import os
 import pytest
 
 class TestDataProcessing(unittest.TestCase):

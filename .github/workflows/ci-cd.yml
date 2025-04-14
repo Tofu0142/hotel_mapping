@@ -25,6 +25,9 @@ jobs:
     
     - name: Run tests
       run: |
+        # install package
+        pip install -e .
+        # unitest
         pytest tests/ -v
   
   build-and-push:
