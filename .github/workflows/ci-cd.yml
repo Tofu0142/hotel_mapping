@@ -96,7 +96,12 @@ jobs:
     
     - name: Configure Docker for GCP Artifact Registry
       run: |
-        gcloud auth configure-docker ${{ secrets.GCP_REGION }}-docker.pkg.dev
+        # Authenticate with Google Cloud
+        echo '${{ secrets.GCP_SA_KEY }}' | base64 --decode > key.json
+        gcloud auth activate-service-account --key-file=key.json
+    
+        # Configure Docker to use gcloud as a credential helper
+        gcloud auth configure-docker ${{ secrets.GCP_REGION }}-docker.pkg.dev --quiet
     
     - name: Build and push Docker image to GCP
       uses: docker/build-push-action@v4
