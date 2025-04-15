@@ -108,7 +108,7 @@ The room matching model uses a hybrid approach:
 1. **Data Collection**: Gathering labeled pairs of matching rooms from different suppliers
 2. **Feature Generation**: Creating feature vectors from room pairs (both matching and non-matching)
 3. **Model Training**: Training XGBoost on the combined features
-4. **Hyperparameter Tuning**: Optimizing model parameters for best performance
+4. **Hyperparameter Tuning**: Optimizing model parameters for best performance via Labeled Data
 5. **Evaluation**: Measuring precision, recall, F1 score, and ROC AUC
 
 ### Model Explainability
