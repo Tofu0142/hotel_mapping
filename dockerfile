@@ -2,47 +2,53 @@ FROM python:3.9-slim
 
 WORKDIR /app
 
-# Install dependencies
+# Install system dependencies
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    build-essential \
+    git \
+    && rm -rf /var/lib/apt/lists/*
+
+# Copy and install dependencies
 COPY requirements.txt .
-RUN pip install --no-cache-dir -r requirements.txt
+
+# Install specific versions to resolve compatibility issues
+# The cached_download function exists in huggingface_hub 0.12.1
+RUN pip install --no-cache-dir --upgrade pip && \
+    pip install --no-cache-dir transformers==4.26.0 && \
+    pip install --no-cache-dir huggingface_hub==0.12.1 && \
+    pip install --no-cache-dir sentence-transformers==2.2.2 && \
+    pip install --no-cache-dir -r requirements.txt
 
 # Copy application code
 COPY . .
 
-# Debugging
-RUN echo "Listing directory structure:"
-RUN ls -la
-RUN echo "Checking hotel_mapping directory:"
-RUN ls -la hotel_mapping/
-RUN echo "Python packages:"
-RUN pip list
-
-
-# Create models directory if it doesn't exist
+# Create necessary directories
 RUN mkdir -p models
 RUN mkdir -p trained_model
 
-# The PORT environment variable is provided by Cloud Run
-# We need to make sure our application listens on this port
+# Install the application
+RUN pip install -e .
+
+# Set environment variables
 ENV PORT=8080
 ENV PYTHONUNBUFFERED=1
-ENV DEBUG=True
+ENV PYTHONDONTWRITEBYTECODE=1
 
-RUN pip install gunicorn uvloop httptools
-
-
+# Create a startup script with debugging information
 RUN echo '#!/bin/bash\n\
 echo "Starting application..."\n\
-echo "Current directory: $(pwd)"\n\
-echo "PORT: $PORT"\n\
-echo "Python path:"\n\
-python -c "import sys; print(sys.path)"\n\
-echo "Checking if app module can be imported:"\n\
-python -c "from hotel_mapping.app import app; print(\"Import successful\")"\n\
-echo "Starting server..."\n\
-exec gunicorn hotel_mapping.app:app -k uvicorn.workers.UvicornWorker --bind 0.0.0.0:$PORT --workers 2 --timeout 300 --log-level debug\n\
+echo "Python packages:"\n\
+pip list | grep -E "huggingface|sentence|transformers"\n\
+\n\
+echo "Starting server on port $PORT..."\n\
+exec gunicorn --bind 0.0.0.0:$PORT \\\n\
+    --workers 1 \\\n\
+    --worker-class uvicorn.workers.UvicornWorker \\\n\
+    --timeout 300 \\\n\
+    --log-level info \\\n\
+    hotel_mapping.app:app\n\
 ' > /app/start.sh && \
 chmod +x /app/start.sh
-# Run the application with Uvicorn
-# Note: We're using the PORT environment variable here
+
+# Run the startup script
 CMD ["/app/start.sh"]
