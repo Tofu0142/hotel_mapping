@@ -34,16 +34,31 @@ class BertXGBoostRoomMatcher:
         
         # Load lightweight BERT model
         print(f"Loading BERT model: {bert_model_name}")
-        self.tokenizer = AutoTokenizer.from_pretrained(bert_model_name)
-        self.bert_model = AutoModel.from_pretrained(bert_model_name)
-        
-        # Set to evaluation mode
-        self.bert_model.eval()
-        
-        # Detect device
-        self.device = 'cuda' if torch.cuda.is_available() else 'cpu'
-        self.bert_model.to(self.device)
-        print(f"Using device: {self.device}")
+        try:
+            # try use  SentenceTransformer
+            self.sentence_transformer = SentenceTransformer(bert_model_name)
+            print("Successfully loaded SentenceTransformer model")
+            
+            # for compatibility, we still keep tokenizer and bert_model
+            self.tokenizer = AutoTokenizer.from_pretrained(bert_model_name)
+            self.bert_model = AutoModel.from_pretrained(bert_model_name)
+            
+            # set evaluation mode
+            self.bert_model.eval()
+            
+            # check device
+            self.device = 'cuda' if torch.cuda.is_available() else 'cpu'
+            self.bert_model.to(self.device)
+            print(f"Using device: {self.device}")
+        except Exception as e:
+            print(f"Error loading SentenceTransformer: {e}")
+            # 回退到原始加载方式
+            self.tokenizer = AutoTokenizer.from_pretrained(bert_model_name)
+            self.bert_model = AutoModel.from_pretrained(bert_model_name)
+            self.bert_model.eval()
+            self.device = 'cuda' if torch.cuda.is_available() else 'cpu'
+            self.bert_model.to(self.device)
+            print(f"Using device: {self.device}")
     
     def extract_features(self, room_name):
        
@@ -127,6 +142,14 @@ class BertXGBoostRoomMatcher:
             if os.path.exists(cache_path):
                 return np.load(cache_path)
         
+        if hasattr(self, 'sentence_transformer'):
+            print("Using SentenceTransformer for encoding")
+            embeddings = self.sentence_transformer.encode(texts, batch_size=self.batch_size)
+            
+            if use_cache:
+                np.save(cache_path, embeddings)
+                
+            return embeddings
         # Process texts in batches
         all_embeddings = []
         
@@ -542,7 +565,7 @@ class BertXGBoostRoomMatcher:
     
     def encode(self, texts):
         """
-        使用 BERT 模型对文本进行编码
+        
         """
         if self.bert_model is None:
             raise ValueError("BERT model not loaded. Call load_model() first.")
