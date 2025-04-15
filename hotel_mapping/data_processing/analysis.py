@@ -768,6 +768,5 @@ def analysis(reference_data, core_data, output_dir='./analysis_output'):
         'reference_features': reference_features,
         'core_features': core_features,
         'similarity_results': similarity_df,
-        'room_type_similarity': similarity_matrix,
         'output_dir': output_dir
     }
