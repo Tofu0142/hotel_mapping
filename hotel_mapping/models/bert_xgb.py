@@ -21,7 +21,7 @@ class BertXGBoostRoomMatcher:
     """
     
     def __init__(self, 
-                bert_model_name='prajjwal1/bert-tiny',  # 4-layer BERT, 16x smaller than base
+                bert_model_name='sentence-transformers/all-MiniLM-L6-v2',  # 4-layer BERT, 16x smaller than base
                 model_path='./bert_xgb_room_matcher.joblib',
                 max_length=64,
                 batch_size=32):
