@@ -570,7 +570,7 @@ class BertXGBoostRoomMatcher:
         if self.bert_model is None:
             raise ValueError("BERT model not loaded. Call load_model() first.")
         
-        return self.bert_model.encode(texts, batch_size=self.batch_size)
+        return self.get_bert_embeddings(texts)
     
     def predict(self, reference_rooms, supplier_rooms, threshold=0.5):
         """Predict room matches"""
