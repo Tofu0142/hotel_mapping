@@ -42,7 +42,7 @@ logs/
 trained_model/*.joblib
 trained_model/*.pkl
 embeddings_cache/*.npy
-data_source/raw_data/*.csv
+data_sources/raw/*.csv
 *.png
 
 

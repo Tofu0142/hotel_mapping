@@ -13,6 +13,7 @@ The Hotel Room Mapping API provides an intelligent solution for the hospitality 
 - **REST API**: Simple integration with existing systems via RESTful endpoints
 - **Explainable Results**: Provides similarity scores and feature importance analysis
 - **Scalable Architecture**: Containerized deployment with Cloud Run support
+- **Airflow**: Automated pipeline for data processing and model training
 
 ## Architecture
 
@@ -22,7 +23,7 @@ The system consists of several key components:
 2. **BERT+XGBoost Model**: Combines semantic embeddings with feature engineering for accurate matching
 3. **FastAPI Service**: Provides RESTful endpoints for room matching
 4. **CI/CD Pipeline**: Automated testing and deployment to Google Cloud Platform
-
+5. **Airflow**: Automated pipeline for data processing and model training
 ## API Usage
 
 ### Match Rooms Endpoint
