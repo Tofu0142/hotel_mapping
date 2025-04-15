@@ -12,15 +12,11 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     pkg-config \
     && rm -rf /var/lib/apt/lists/*
 
-# Copy and install dependencies
+# Copy requirements first for better caching
 COPY requirements.txt .
 
-# Install matplotlib explicitly before other requirements
+# Install dependencies from requirements.txt
 RUN pip install --no-cache-dir --upgrade pip && \
-    pip install --no-cache-dir matplotlib==3.5.1 && \
-    pip install --no-cache-dir transformers==4.26.0 && \
-    pip install --no-cache-dir huggingface_hub==0.12.1 && \
-    pip install --no-cache-dir sentence-transformers==2.2.2 && \
     pip install --no-cache-dir -r requirements.txt
 
 # Copy application code
@@ -41,8 +37,8 @@ ENV PYTHONDONTWRITEBYTECODE=1
 # Create a startup script with debugging information
 RUN echo '#!/bin/bash\n\
 echo "Starting application..."\n\
-echo "Python packages:"\n\
-pip list | grep -E "matplotlib|huggingface|sentence|transformers"\n\
+echo "Installed packages:"\n\
+pip list\n\
 \n\
 echo "Starting server on port $PORT..."\n\
 exec gunicorn --bind 0.0.0.0:$PORT \\\n\
