@@ -6,14 +6,18 @@ WORKDIR /app
 RUN apt-get update && apt-get install -y --no-install-recommends \
     build-essential \
     git \
+    # Add dependencies for matplotlib
+    libfreetype6-dev \
+    libpng-dev \
+    pkg-config \
     && rm -rf /var/lib/apt/lists/*
 
 # Copy and install dependencies
 COPY requirements.txt .
 
-# Install specific versions to resolve compatibility issues
-# The cached_download function exists in huggingface_hub 0.12.1
+# Install matplotlib explicitly before other requirements
 RUN pip install --no-cache-dir --upgrade pip && \
+    pip install --no-cache-dir matplotlib==3.5.1 && \
     pip install --no-cache-dir transformers==4.26.0 && \
     pip install --no-cache-dir huggingface_hub==0.12.1 && \
     pip install --no-cache-dir sentence-transformers==2.2.2 && \
@@ -38,7 +42,7 @@ ENV PYTHONDONTWRITEBYTECODE=1
 RUN echo '#!/bin/bash\n\
 echo "Starting application..."\n\
 echo "Python packages:"\n\
-pip list | grep -E "huggingface|sentence|transformers"\n\
+pip list | grep -E "matplotlib|huggingface|sentence|transformers"\n\
 \n\
 echo "Starting server on port $PORT..."\n\
 exec gunicorn --bind 0.0.0.0:$PORT \\\n\
