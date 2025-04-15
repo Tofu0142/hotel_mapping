@@ -7,26 +7,26 @@ from sklearn.metrics.pairwise import cosine_similarity
 
 def preprocess_room_names(room_names, extract_features=True):
     """
-    对酒店房间名称进行全面预处理，不使用NLTK
+    Comprehensive preprocessing of hotel room names without using NLTK
     
-    参数:
-    room_names (list): 房间名称列表
-    extract_features (bool): 是否提取结构化特征
+    Parameters:
+    room_names (list): List of room names
+    extract_features (bool): Whether to extract structured features
     
-    返回:
-    processed_names (list): 预处理后的房间名称
-    features (dict, optional): 提取的结构化特征
+    Returns:
+    processed_names (list): Preprocessed room names
+    features (dict, optional): Extracted structured features
     """
     processed_names = []
     features = {} if extract_features else None
     
-    # 自定义英文停用词列表
+    # Custom English stopwords list
     stop_words = {'a', 'an', 'the', 'and', 'or', 'but', 'if', 'then', 'else', 'when',
                  'at', 'from', 'by', 'for', 'with', 'about', 'against', 'between',
                  'into', 'through', 'during', 'before', 'after', 'above', 'below',
                  'to', 'of', 'in', 'on', 'is', 'are', 'was', 'were'}
     
-    # 房间类型标准化映射
+    # Room type standardization mapping
     room_type_mapping = {
         'double': 'double', 'twin': 'twin', 'single': 'single',
         'queen': 'queen', 'king': 'king', 'suite': 'suite',
@@ -37,25 +37,25 @@ def preprocess_room_names(room_names, extract_features=True):
         'dormitory': 'dormitory', 'dorm': 'dormitory'
     }
     
-    # 床型标准化映射
+    # Bed type standardization mapping
     bed_type_mapping = {
         'queen': 'queen bed', 'king': 'king bed', 
         'single': 'single bed', 'double': 'double bed',
         'twin': 'twin bed', 'sofa': 'sofa bed'
     }
     
-    # 容量/人数模式
+    # Capacity/occupancy patterns
     capacity_patterns = [
         r'(\d+)\s*person', r'(\d+)\s*people', r'(\d+)\s*bed',
         r'for\s*(\d+)', r'(\d+)\s*adult', r'(\d+)\s*pax'
     ]
     
-    # 面积模式
+    # Area patterns
     area_patterns = [
         r'(\d+)\s*m²', r'(\d+)\s*sqm', r'(\d+)\s*square\s*meter'
     ]
     
-    # 简单的词形还原映射
+    # Simple lemmatization mapping
     lemma_mapping = {
         'rooms': 'room', 'beds': 'bed', 'bedrooms': 'bedroom',
         'apartments': 'apartment', 'suites': 'suite', 'villas': 'villa',
@@ -85,41 +85,41 @@ def preprocess_room_names(room_names, extract_features=True):
                     features[key].append(None)
             continue
             
-        # 转换为小写
+        # Convert to lowercase
         name = name.lower()
         
-        # 提取特征（如果需要）
+        # Extract features (if needed)
         if extract_features:
-            # 初始化该房间的特征
+            # Initialize features for this room
             room_features = {k: None for k in features.keys()}
             
-            # 提取房间类型
+            # Extract room type
             for room_type in room_type_mapping:
                 if room_type in name.split():
                     room_features['room_type'] = room_type_mapping[room_type]
                     break
             
-            # 提取床型
+            # Extract bed type
             for bed_type in bed_type_mapping:
                 if bed_type in name.split() and 'bed' in name:
                     room_features['bed_type'] = bed_type_mapping[bed_type]
                     break
             
-            # 提取容量/人数
+            # Extract capacity/occupancy
             for pattern in capacity_patterns:
                 match = re.search(pattern, name)
                 if match:
                     room_features['capacity'] = int(match.group(1))
                     break
             
-            # 提取面积
+            # Extract area
             for pattern in area_patterns:
                 match = re.search(pattern, name)
                 if match:
                     room_features['area'] = int(match.group(1))
                     break
             
-            # 检查其他特征
+            # Check other features
             room_features['has_view'] = any(view in name for view in ['view', 'sea', 'ocean', 'mountain', 'garden', 'harbor'])
             room_features['has_balcony'] = 'balcony' in name
             room_features['has_terrace'] = 'terrace' in name
@@ -127,42 +127,42 @@ def preprocess_room_names(room_names, extract_features=True):
             room_features['is_non_smoking'] = ('non-smoking' in name) or ('no smoking' in name)
             room_features['has_breakfast'] = 'breakfast' in name
             
-            # 将特征添加到总特征字典中
+            # Add features to the main features dictionary
             for k in features.keys():
                 features[k].append(room_features[k])
         
-        # 清理文本
-        # 移除标点符号
+        # Clean text
+        # Remove punctuation
         name = name.translate(str.maketrans('', '', string.punctuation))
         
-        # 标准化空格
+        # Normalize whitespace
         name = re.sub(r'\s+', ' ', name).strip()
         
-        # 标准化常见缩写和变体
+        # Normalize common abbreviations and variants
         name = name.replace('w/', 'with')
         name = name.replace('w/o', 'without')
         name = name.replace('sq m', 'sqm')
         name = name.replace('sq. m', 'sqm')
         
-        # 标准化房间类型
+        # Standardize room types
         for room_type, standard_type in room_type_mapping.items():
             name = re.sub(r'\b' + room_type + r'\b', standard_type, name)
         
-        # 标准化床型
+        # Standardize bed types
         for bed_type, standard_bed in bed_type_mapping.items():
             if re.search(r'\b' + bed_type + r'\s+bed\b', name):
                 name = re.sub(r'\b' + bed_type + r'\s+bed\b', standard_bed, name)
         
-        # 自定义分词 - 简单按空格分割
+        # Custom tokenization - simple space splitting
         tokens = name.split()
         
-        # 移除停用词
+        # Remove stopwords
         tokens = [token for token in tokens if token not in stop_words]
         
-        # 简单的词形还原
+        # Simple lemmatization
         tokens = [lemma_mapping.get(token, token) for token in tokens]
         
-        # 重新组合为文本
+        # Recombine into text
         processed_name = ' '.join(tokens)
         
         processed_names.append(processed_name)
@@ -174,27 +174,27 @@ def preprocess_room_names(room_names, extract_features=True):
 
 def enhanced_room_matching(reference_rooms, supplier_rooms, model, similarity_threshold=0.6, feature_weight=0.3):
     """
-    使用文本相似度和结构化特征的组合方法进行房间匹配
+    Room matching using a combination of text similarity and structured features
     
-    参数:
-    reference_rooms (DataFrame): 参考房间数据
-    supplier_rooms (DataFrame): 供应商房间数据
-    model: 已加载的Sentence-BERT模型
-    similarity_threshold (float): 相似度阈值
-    feature_weight (float): 特征相似度的权重
+    Parameters:
+    reference_rooms (DataFrame): Reference room data
+    supplier_rooms (DataFrame): Supplier room data
+    model: Loaded Sentence-BERT model
+    similarity_threshold (float): Similarity threshold
+    feature_weight (float): Weight for feature similarity
     
-    返回:
-    matches (DataFrame): 匹配结果
+    Returns:
+    matches (DataFrame): Matching results
     """
-    # 提取文本嵌入
+    # Extract text embeddings
     ref_embeddings = model.encode(reference_rooms['processed_name'].tolist())
     sup_embeddings = model.encode(supplier_rooms['processed_name'].tolist())
     
-    # 计算文本相似度矩阵
+    # Calculate text similarity matrix
     text_similarity = cosine_similarity(ref_embeddings, sup_embeddings)
     
    
-    # 找到最佳匹配
+    # Find best matches
     matches = []
     for i in range(len(reference_rooms)):
         best_match_idx = np.argmax(text_similarity[i])
@@ -216,26 +216,35 @@ def enhanced_room_matching(reference_rooms, supplier_rooms, model, similarity_th
 
 
 def main(reference_rooms, supplier_rooms):
-
+    """
+    Main function to process reference and supplier room data
     
-    # 预处理参考房间名称并提取特征
+    Parameters:
+    reference_rooms (DataFrame): Reference room data
+    supplier_rooms (DataFrame): Supplier room data
+    
+    Returns:
+    tuple: Processed reference and supplier room data
+    """
+    
+    # Preprocess reference room names and extract features
     processed_ref_names, ref_features = preprocess_room_names(reference_rooms['room_name'].tolist(), extract_features=True)
     
-    # 预处理供应商房间名称并提取特征
+    # Preprocess supplier room names and extract features
     processed_sup_names, sup_features = preprocess_room_names(supplier_rooms['supplier_room_name'].tolist(), extract_features=True)
     
-    # 将处理后的名称添加到原始数据框中
+    # Add processed names to original dataframes
     reference_rooms['processed_name'] = processed_ref_names
     supplier_rooms['processed_name'] = processed_sup_names
     
-    # 将提取的特征添加到原始数据框中
+    # Add extracted features to original dataframes
     for feature_name, feature_values in ref_features.items():
         reference_rooms[feature_name] = feature_values
     
     for feature_name, feature_values in sup_features.items():
         supplier_rooms[feature_name] = feature_values
+    
     return reference_rooms, supplier_rooms
-
 
 
 if __name__ == "__main__":
